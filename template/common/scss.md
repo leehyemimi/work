@@ -26,10 +26,15 @@
 #### common.scss
 
 ```css
+@charset "UTF-8";
 @import 'variables',
-    'common/mixin', // 공통
-    'common/reset', // 공통
-    'layout';
+		'common/mixin',
+		'common/webfont',
+		'common/reset',
+		'layout';
+
+/* color */
+.point-color{color:$ptc !important;}
 ```
 
 
