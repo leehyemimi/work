@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+$webfont:'../css/common/webfont/notokr-regular';
+$webfont-bold:'../css/common/webfont/notokr-bold';
+
+@font-face {
+	font-family: 'noto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Noto Sans Regular'), local('NotoSans-Regular');
+	src: url($webfont+".eot");
+	src: url($webfont+".eot?#iefix") format('embedded-opentype'),
+	url($webfont+".woff2") format('woff2'),
+	url($webfont+".woff") format('woff'),
+	url($webfont+".ttf") format('truetype')
+}
+
+@font-face {
+	font-family: 'noto';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Noto Sans bold'), local('notokr-bold');
+	src: url($webfont-bold+".eot");
+	src: url($webfont-bold+".eot?#iefix") format('embedded-opentype'),
+	url($webfont-bold+".woff2") format('woff2'),
+	url($webfont-bold+".woff") format('woff'),
+	url($webfont-bold+".ttf") format('truetype')
+}
