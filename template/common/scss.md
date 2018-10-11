@@ -3,7 +3,7 @@
 ### 기본구조
 
 ```css
-/_define.scss
+/_variables.scss
 /_layout.scss
 /_lecture.scss
 /common.scss
@@ -26,7 +26,7 @@
 #### common.scss
 
 ```css
-@import 'define',
+@import 'variables',
 		'common/mixin', // 공통
 		'common/reset', // 공통
 		'layout';
@@ -38,7 +38,7 @@
 
 ```css
 @charset "UTF-8";
-@import 'define',
+@import 'variables',
 		'common/mixin',
 		'common/form',
 		'common/btn',
@@ -56,7 +56,7 @@
 ```css
 @charset "UTF-8";
 
-@import 'define',
+@import 'variables',
   		'common/mixin';
 ```
 
