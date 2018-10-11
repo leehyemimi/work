@@ -11,14 +11,14 @@
 /sub.scss
 
 /common //공통
-  /_reset.scss
-  /_mixin.scss
-  /_form.scss
-  /_btn.scss
-  /_board.scss
-  /_component.scss
-  /_popUp.scss
-  /_layer.scss	
+    /_reset.scss
+    /_mixin.scss
+    /_form.scss
+    /_btn.scss
+    /_board.scss
+    /_component.scss
+    /_popUp.scss
+    /_layer.scss	
 ```
 
 
@@ -27,9 +27,9 @@
 
 ```css
 @import 'variables',
-		'common/mixin', // 공통
-		'common/reset', // 공통
-		'layout';
+    'common/mixin', // 공통
+    'common/reset', // 공통
+    'layout';
 ```
 
 
@@ -39,14 +39,14 @@
 ```css
 @charset "UTF-8";
 @import 'variables',
-		'common/mixin',
-		'common/form',
-		'common/btn',
-		'common/ico',
-		'common/board',
-		'common/component',
-		'common/popUp',
-		'lecture';   // page
+    'common/mixin',
+    'common/form',
+    'common/btn',
+    'common/ico',
+    'common/board',
+    'common/component',
+    'common/popUp',
+    'lecture';   // page
 ```
 
 
@@ -57,6 +57,6 @@
 @charset "UTF-8";
 
 @import 'variables',
-  		'common/mixin';
+    'common/mixin';
 ```
 
