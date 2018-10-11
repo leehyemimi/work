@@ -4,7 +4,7 @@ Error: File to import not found or unreadable: ../../common/_css/mixin.
 
 1: @charset "UTF-8";
 2: 
-3: @import 'define','../../common/_css/mixin';
+3: @import 'variables','../../common/_css/mixin';
 4: $bg:#EDEDED;
 5: 
 6: #content{
@@ -55,4 +55,4 @@ C:/Ruby22-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../../common/_css/mixin.\A         on line 3 of main.scss\A \A 1: @charset \"UTF-8\";\A 2: \A 3: @import 'define','../../common/_css/mixin';\A 4: $bg:#EDEDED;\A 5: \A 6: #content{\A 7: 	.inner-box{\A 8: 		padding:43px 0;"; }
+  content: "Error: File to import not found or unreadable: ../../common/_css/mixin.\A         on line 3 of main.scss\A \A 1: @charset \"UTF-8\";\A 2: \A 3: @import 'variables','../../common/_css/mixin';\A 4: $bg:#EDEDED;\A 5: \A 6: #content{\A 7: 	.inner-box{\A 8: 		padding:43px 0;"; }

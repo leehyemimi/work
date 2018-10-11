@@ -1,28 +1,6 @@
 @charset "UTF-8";
 
-@font-face {
-	font-family: 'noto';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Noto Sans Regular'), local('NotoSans-Regular');
-	src: url(common/webfont/notokr-regular.eot);
-	src: url(common/webfont/notokr-regular.eot?#iefix) format('embedded-opentype'),
-	url(common/webfont/notokr-regular.woff2) format('woff2'),
-	url(common/webfont/notokr-regular.woff) format('woff'),
-	url(common/webfont/notokr-regular.ttf) format('truetype')
-}
-
-@font-face {
-	font-family: 'noto';
-	font-style: normal;
-	font-weight: 600;
-	src: local('Noto Sans bold'), local('notokr-bold');
-	src: url(common/webfont/notokr-bold.eot);
-	src: url(common/webfont/notokr-bold.eot?#iefix) format('embedded-opentype'),
-	url(common/webfont/notokr-bold.woff2) format('woff2'),
-	url(common/webfont/notokr-bold.woff) format('woff'),
-	url(common/webfont/notokr-bold.ttf) format('truetype')
-}
+//@import 'webfont'
 
 /* reset:Start */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0;line-height:1.5}
