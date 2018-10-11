@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>마크업가이드</title>
+	<meta name="robots" content="ALL">
+	<meta name="description" content="HACKERS">
+	<meta name="keywords" content="HACKERS">
+	<link rel="shortcut icon" href="//gscdn.hackers.co.kr/hackerseducation/img/common/favicon.ico">
+
+	<!--<meta property="og:type" content="website">
+	<meta property="og:title" content="외국어인강 No.1 해커스인강">
+	<meta property="og:description" content="토익,토플,토스 스타강사 인강+교재0원!">
+	<meta property="og:url" content="http://www.champstudy.com">
+	<meta property="og:image" content="http://gscdn.hackers.co.kr/champ/files/banner/imglib_files/banner/imglib/champ_PC_ogtag_450x300_0412.jpg">
+	<meta name="google-site-verification" content="cwF8FxGjnasm7V14yCYVcmz3EvCRQaHyhQ-_Z4ldMeM" /><link rel="alternate" media="only screen and (max-width: 640px)"  href="http://m.champ.hackers.com/">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/_core/images/ico/champstudy/apple-touch-icon-144-precomposed.png">-->
+
+	<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/common/bxslider.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/sub.css"><!--메인에는 sub.css 호출하지않음-->
+	<script type="text/javascript" src="../assets/plugins/jquery/1.11.2/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../assets/plugins/jquery-bxslider/4.1.2/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="../assets/js/bxslider.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.js"></script>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="guide.css">
+<script type="text/javascript" src="guide.js"></script>
+<div id="sidebar">
+	<strong>
+		<a href="guide.html">마크업 가이드</a>
+	</strong>
+
+	<ul class="nav">
+		<li class="on">
+			<a href="layout-sub.html" target="_blank">layout sub (새창)</a>
+			<!--ul>
+				<li><a href="layout-sub.html" target="_blank">sub</a></li>
+			</ul-->
+		</li>
+		<li>
+			<a href="title.html">Title</a>
+		</li>
+		<li>
+			<a href="table.html">Table</a>
+			<ul>
+				<li><a href="#board-wrap">board type</a></li>
+				<li><a href="#board-detail-wrap">board detail</a></li>
+				<li><a href="#board-form-wrap">board write</a></li>
+				<li><a href="#table-wrap">table type</a></li>
+				<li><a href="#faq-list-wrap">faq type</a></li>
+				<li><a href="#paginate">paginate</a></li>
+
+			</ul>
+		</li>
+		<li>
+			<a href="btn.html">Btn</a>
+		</li>
+		<li>
+			<a href="icon.html">Icon</a>
+		</li>
+		<li>
+			<a href="tab.html">Tab</a>
+		</li>
+		<li>
+			<a href="form.html">Form</a>
+		</li>
+		<li>
+			<a href="description.html">Description</a>
+		</li>
+		<!--<li>
+			<a href="layer_layout">layer_layout</a>
+		</li>-->
+		<li>
+			<a href="layer.html">Layer Popup</a>
+		</li>
+		<li>
+			<a href="bxslide.html">Bx Slide</a>
+		</li>
+		<li>
+			<a href="script.html">Script</a>
+		</li>
+		<li>
+			<a href="https://github.com/leehyemimi/work/blob/master/template/common/scss.md" target="_blank">SCSS GUIDE (새창)</a>
+		</li>
+	</ul>
+</div>
+
+<div id="wrap">
+	<div id="content">
+
+		<!--작업영역-->
+		<div class="inner-box">
+			<h3 class="guide-tit">기본정보</h3>
+			<h4 class="guide-tit">작업모음</h4>
+			<div class="table-wrap-horizontal">
+				<table>
+					<caption class="blind">게시글</caption>
+					<colgroup>
+						<col style="width:26%;">
+						<col>
+					</colgroup>
+					<tbody>
+					<!--<tr>
+						<th scope="row">기획</th>
+						<td>
+							<a href="http://hac.educamp.org/linker.php?menuno=1703&board_id=web_sso_prj&board_no=4620" class="btn-link point-color" target="_blank">화면설계 및 IA &gt;</a>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">디자인</th>
+						<td>
+							<a href="http://hac.educamp.org/linker.php?menuno=1261&board_id=web_publishing&board_no=53022" class="btn-link point-color" target="_blank">디자인가이드 &gt;</a>
+						</td>
+					</tr>-->
+					<tr>
+						<th scope="row">퍼블</th>
+						<td>
+							<a href="https://docs.google.com/spreadsheets/d/1Wwb9QlOlZaZzRHU9PBLfdySpF3SszYl_VgnDwv0hhg4/edit#gid=1518446857" class="btn-link point-color" target="_blank">
+								작업리스트 &gt;
+							</a>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h4 class="guide-tit">네이밍</h4>
+			<div class="table-wrap-horizontal">
+				<table>
+					<caption class="blind">공통 가이드</caption>
+					<colgroup>
+						<col style="width:26%;">
+						<col>
+					</colgroup>
+					<tbody>
+					<tr>
+						<th scope="row">레이아웃 예약어</th>
+						<td><strong>#warp</strong><br/>
+							<strong>#header</strong><br/>
+							<strong>#content</strong> - 스타일은 주지 않는다, 구조를 잡기위한 id로 사용<br/>
+							└ .1depth 카테고리명<br/>
+							<strong>#footer</strong>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">이미지 네이밍</th>
+						<td><strong>스프라이트이미지 </strong> : sp_btn , sp_ico <br/>
+							<strong>배경이미지</strong> :  bg_com
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="3">class 네이밍</th>
+						<td>단어가 너무 길지 않으면 축약하지 않고 쓴다.<br/>
+							이름은 영문소문자, 숫자, <strong>하이픈(-)</strong>으로 작성<br/>
+							<strong>형태-의미-구조</strong>
+						</td>
+					</tr>
+					<tr>
+						<td><strong>1. type1에서 1은 제외 시킨다.</strong><br/>
+							<br/>
+							잘못된예 ) table-type1<br/>
+							잘된예 ) table-type
+						</td>
+					</tr>
+					<tr>
+						<td><strong>2. type에서 스타일이 일부변경된다면 v2,v3로 달라진부분만 변경한다.</strong><br/>
+							<br/>
+							잘못된예 ) table-type-v2<br/>
+							잘된예 ) table-type.v2
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">css</th>
+						<td>
+							<strong>common.css</strong> - reset / gnb / footer / 퀵메뉴 / 패밀리사이트 / layout<br/>
+							<strong>sub.css</strong> - 서브페이지용 (공통 + 카테고리별 css)<br/>
+							<strong>main.css</strong> - 메인페이지용<br/>
+							<strong>event.css</strong>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+			<h4 class="guide-tit">네이밍 예약어</h4>
+			<div class="table-wrap-horizontal">
+				<table>
+					<caption class="blind">네이밍 예약어</caption>
+					<colgroup>
+						<col style="width:26%;">
+						<col>
+					</colgroup>
+					<tbody>
+					<tr>
+						<th scope="row">버튼</th>
+						<td>
+							btn
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">타이틀</th>
+						<td>
+							title
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">아이콘</th>
+						<td>
+							ico
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">백그라운드</th>
+						<td>
+							bg
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">스프라이트</th>
+						<td>
+							sp
+						</td>
+					</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+			<h4 class="guide-tit">폴더구조</h4>
+			<div class="table-wrap-horizontal">
+				<table>
+					<caption class="blind">공통 가이드</caption>
+					<colgroup>
+						<col style="width:26%;">
+						<col>
+					</colgroup>
+					<tbody>
+					<tr>
+						<th scope="row">이미지 폴더구조</th>
+						<td>
+							<strong>common <br>
+							temp<br>
+							main<br>
+							event<br>
+							1depth 카테고리명</strong>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">HTML폴더구조</th>
+						<td>
+							<strong>common <br>
+								1depth 카테고리명</strong>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+		
+		<!--//작업영역-->
+
+	</div>
+</div>
+</body>
+</html>
