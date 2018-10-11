@@ -3,13 +3,6 @@
 ### 기본구조
 
 ```css
-/_variables.scss
-/_layout.scss
-/_lecture.scss
-/common.scss
-/main.scss
-/sub.scss
-
 /common //공통
     /_reset.scss
     /_mixin.scss
@@ -19,6 +12,13 @@
     /_component.scss
     /_popUp.scss
     /_layer.scss	
+    
+/_variables.scss
+/_layout.scss
+/_lecture.scss
+/common.scss
+/main.scss
+/sub.scss
 ```
 
 
