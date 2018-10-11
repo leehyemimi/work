@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+//$img-url:'//gscdn.hackers.co.kr/ecpa/img/';
+
+@mixin background($url, $x:0, $y:0, $color:''){
+	background:unquote($color) url($img-url+$url) no-repeat $x $y;
+}
+@mixin opacity-layer(){
+	display:block;
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:url($img-url+ 'common/bg_opacity.png');
+}
+@mixin position-abs-center($w,$h){
+	position:absolute;
+	width:$w + px;
+	height:$h + px;
+	top:50%;
+	left:50%;
+	margin-top:-($h/2)+px;
+	margin-left:-($w/2) +px
+}
+@mixin hidden-txt(){
+	overflow:hidden;
+	text-overflow:ellipsis;
+	display:inline-block;
+	max-width:100%;
+	white-space:nowrap;
+	text-align:left;
+}
+@mixin hidden-txt-multi($line:2){
+	overflow:hidden;
+	display:-webkit-box;
+	text-overflow:ellipsis;
+	height:($line*1.2)+em;
+	-webkit-line-clamp:$line;
+	-webkit-box-orient:vertical;
+	word-wrap:break-word;
+	line-height:1.2em;
+}
+@mixin opacity($opacity:0.5){
+	opacity:$opacity;
+	$opacityIE:$opacity*100;
+	filter:alpha(opacity=$opacityIE);
+}
+@mixin position-abs-vertical($h,$xPos:left){
+	position:absolute;
+	height:$h + px;
+	top:50%;
+	margin-top:-($h/2)+px;
+	@if $xPos == left{
+		left:0;
+	} @else if $xPos == right{
+		right:0;
+	}
+}

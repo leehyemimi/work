@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'noto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Noto Sans Regular'), local('NotoSans-Regular');
+	src: url(common/webfont/notokr-regular.eot);
+	src: url(common/webfont/notokr-regular.eot?#iefix) format('embedded-opentype'),
+	url(common/webfont/notokr-regular.woff2) format('woff2'),
+	url(common/webfont/notokr-regular.woff) format('woff'),
+	url(common/webfont/notokr-regular.ttf) format('truetype')
+}
+
+@font-face {
+	font-family: 'noto';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Noto Sans bold'), local('notokr-bold');
+	src: url(common/webfont/notokr-bold.eot);
+	src: url(common/webfont/notokr-bold.eot?#iefix) format('embedded-opentype'),
+	url(common/webfont/notokr-bold.woff2) format('woff2'),
+	url(common/webfont/notokr-bold.woff) format('woff'),
+	url(common/webfont/notokr-bold.ttf) format('truetype')
+}
+
+/* reset:Start */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0;line-height:1.5}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+input,select,textarea,button{vertical-align:middle}
+input:focus,button:focus,textarea:focus{outline:none;}
+button{border:0 none;background-color:transparent;cursor:pointer}
+body{background:#fff;-webkit-text-size-adjust:none;}
+body,th,td,input,select,textarea,button{font-size:13px;font-family:'noto',Tahoma,sans-serif;font-weight:400; color:#010101}
+a{color:#010101;text-decoration:none}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:400}
+figure{line-height:0}
+table caption{display:none !important;}
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.blind,legend{display:block;overflow:hidden;position:absolute;top:-1000em;left:0}
+h1,h2,h3,h4,h5,h6,strong {font-weight:600}
+table{table-layout:fixed;border-collapse:collapse;width:100%;}
+
+.inner-box{width:1050px;margin:0 auto;}
+/* bx-slider reset */
+.bx-wrapper{width:100%;}

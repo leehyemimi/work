@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<?php include '../common/meta.php'?>
+</head>
+<body>
+<?php include '../common/guide_nav.html'?>
+
+<div id="wrap">
+	<!--header-->
+	<?php include '../common/header.php'?>
+	<!--//header-->
+	<div id="content">
+
+		<!--작업영역-->
+		<div class="inner-box">
+			<h3 class="guide-tit" id="bxslide">bx slide</h3>
+
+			<h4 class="guide-tit">기본 [pager 위치지정 클래스추가 - pager-bottom-left/pager-bottom-right/pager-top-left/pager-top-right]</h4>
+			<div class="bxslider-default" data-mode="horizontal" data-auto="true" data-pager="true" data-controls="true">
+				<ul class="bxslider">
+					<li><img src="//gscdn.hackers.co.kr/ecpa/img/temp/img_lecture_intro_01.jpg" alt=""></li>
+					<li><img src="//gscdn.hackers.co.kr/ecpa/img/temp/img_tr_intro2.jpg" alt=""></li>
+					<li><img src="//gscdn.hackers.co.kr/ecpa/img/temp/img_tr_intro3.jpg" alt=""></li>
+				</ul>
+			</div>
+
+			<h4 class="guide-tit">pager type</h4>
+			<div class="pager-slider-wrap">
+				<div class="bxslider-default" data-mode="horizontal" data-maxslides="5" data-auto="true" data-controls="true" data-pager="true" data-pagercustom="pager-slider-paging" data-cutLimit="3" style="height:300px">
+					<ul class="bxslider">
+						<li><img src="//gscdn.hackers.co.kr/ecpa/img/temp/img_lecture_br.jpg" alt="" /></li>
+						<li><img src="//gscdn.hackers.co.kr/ecpa/img/temp/img_lecture_b2.jpg" alt="" /></li>
+						<li><img src="//gscdn.hackers.co.kr/ecpa/img/temp/img_lecture_br3.jpg" alt="" /></li>
+						<li><img src="//gscdn.hackers.co.kr/ecpa/img/temp/img_lecture_br3.jpg" alt="" /></li>
+						<li><img src="//gscdn.hackers.co.kr/ecpa/img/temp/img_lecture_br3.jpg" alt="" /></li>
+					</ul>
+					<div class="pager-slider-paging">
+						<ul>
+							<li><a href="#" data-slide-index="0" ><span>평생0원 프리패스1</span></a></li>
+							<li><a href="#" data-slide-index="1" ><span>평생0원 프리패스2</span></a></li>
+							<li><a href="#" data-slide-index="2" ><span>평생0원 프리패스3</span></a></li>
+							<li><a href="#" data-slide-index="3" ><span>평생0원 프리패스4</span></a></li>
+							<li><a href="#" data-slide-index="4" ><span>평생0원 프리패스5</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<h4 class="guide-tit">slide-type1</h4>
+			<div class="bxslider-default slide-type1" data-mode="horizontal" data-auto="true" data-controls="true" data-maxSlides="3" data-minSlides="3" data-moves="1" data-pager="false">
+				<ul class="bxslider">
+					<li><img src="https://gscdn.hackers.co.kr/champ/files/banner/imglib_files/banner/imglib/champ_freevoca__268x400.jpg" alt="" /></li>
+					<li class="on"><img src="https://gscdn.hackers.co.kr/champ/files/banner/imglib_files/banner/imglib/free_mp3_toeic_voca_eng_aus_268x400.jpg" alt="" /></li>
+					<li><img src="https://gscdn.hackers.co.kr/champ/files/banner/d0e68f932804fa953dc6991e92e71d52.jpg" alt="" /></li>
+					<li><img src="https://gscdn.hackers.co.kr/champ/files/banner/d0e68f932804fa953dc6991e92e71d52.jpg" alt="" /></li>
+					<li><img src="https://gscdn.hackers.co.kr/champ/files/banner/d0e68f932804fa953dc6991e92e71d52.jpg" alt="" /></li>
+				</ul>
+			</div>
+
+			<h4 class="guide-tit">ticker</h4>
+			<div class="bxslider-default" data-ticker="true" data-speed="15000" data-maxslides="20" data-minSlides="3" data-slideMargin="3">
+				<ul class="bxslider">
+					<li><img src="https://gscdn.hackers.co.kr/champ/files/banner/imglib_files/banner/imglib/champ_freevoca__268x400.jpg" alt="" /></li>
+					<li><img src="https://gscdn.hackers.co.kr/champ/files/banner/imglib_files/banner/imglib/champ_freevoca__268x400.jpg" alt="" /></li>
+					<li><img src="https://gscdn.hackers.co.kr/champ/files/banner/imglib_files/banner/imglib/champ_freevoca__268x400.jpg" alt="" /></li>
+					<li><img src="https://gscdn.hackers.co.kr/champ/files/banner/imglib_files/banner/imglib/champ_freevoca__268x400.jpg" alt="" /></li>
+				</ul>
+			</div>
+			<br><br>
+		</div>
+		<!--//작업영역-->
+
+	</div>
+	<!--footer-->
+	<?php include '../common/footer.php'?>
+	<!--//footer-->
+</div>
+</body>
+</html>

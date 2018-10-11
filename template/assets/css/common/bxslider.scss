@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+@import 'mixin';
+
+/* RESET AND LAYOUT */
+.bxslider-default{overflow:hidden}
+.bx-wrapper{position:relative;margin:0 auto;padding:0}
+.bx-wrapper img{display:inline-block;max-width:100%}
+/* THEME */
+.bx-wrapper .bx-viewport{-webkit-transform:translatez(0);-moz-transform:translatez(0);-ms-transform:translatez(0);-o-transform:translatez(0);transform:translatez(0)}
+.bx-wrapper .bx-viewport .bxslider li{left:0}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto{position:absolute;bottom:0}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-direction{z-index:51}
+/* LOADER !!SettingNoneCustomUse*/
+.bx-wrapper .bx-loading{position:absolute;top:0;left:0;z-index:2000;min-height:50px;height:100%;width:100%}
+/* PAGER */
+.bx-wrapper .bx-pager{width:100%;bottom:20px;text-align:center}
+.bx-wrapper .bx-pager-item,
+.bx-wrapper .bx-controls-auto-item{display:inline-block}
+.bx-wrapper .bx-default-pager a{display:block;width:12px;height:12px;margin:0 3px 0 3px;background-color:#979797;border-radius:50%;font-size:0;text-indent:-9999px}
+.bx-wrapper .bx-default-pager a:hover,
+.bx-wrapper .bx-default-pager a.active{background-color:#395CC1}
+/*PAGER Position(default-bottom center)*/
+.bxslider-default.pager-bottom-left .bx-pager{left:0;padding-left:20px;text-align:left}
+.bxslider-default.pager-bottom-right .bx-pager{right:0;padding-right:20px;text-align:right}
+.bxslider-default.pager-top-left .bx-pager{bottom:auto;top:0;left:0;padding-left:20px;text-align:left}
+.bxslider-default.pager-top-right .bx-pager{bottom:auto;top:0;right:0;padding-right:20px;text-align:right}
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper{
+	$height:84;
+	.bx-controls-direction{
+		a{
+			position:absolute;top:50%;
+			width:34px;height:$height+px;
+			background-image:url(//gscdn.hackers.co.kr/ecpa/img/common/sp_btn.png);
+			text-indent:-9999px;z-index:9;
+		}
+	}
+	.bx-prev{
+		@include position-abs-vertical($height, left);
+		left:10px;
+		background-position:0 -45px;
+	}
+	.bx-next{
+		@include position-abs-vertical($height, right);
+		right:10px;
+		background-position:-50px -45px;
+	}
+}
+/* AUTO CONTROLS (START / STOP) !!SettingNoneCustomUse */
+.bx-wrapper .bx-controls-auto{right:0;}
+.bx-wrapper .bx-controls-auto .bx-start{}
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active{}
+.bx-wrapper .bx-controls-auto .bx-stop{}
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active{}
+/* IMAGE CAPTIONS !!SettingNoneCustomUse*/
+.bx-wrapper .bx-caption{position:absolute;bottom:0;left:0;background:#666 \9
+;background:rgba(80, 80, 80, 0.75);width:100%}
+.bx-wrapper .bx-caption span{color:#FFF;font-family:Arial sans-serif;display:block;font-size:.85em;padding:10px}
+
+//#pager-slider-type
+.pager-slider-wrap{
+	position:relative;
+	.bx-controls-direction{
+		a{
+			top:auto;bottom:5px;z-index:54;
+			width:35px;height:50px;
+			&.bx-prev{
+				left:0;background-position:-183px -25px;
+			}
+			&.bx-next{
+				right:0;background-position:-220px -25px;
+			}
+		}
+	}
+}
+.pager-slider-paging{
+	overflow:hidden;
+	position:absolute;bottom:0;left:0;right:0;z-index:52;
+	height:50px;
+	ul{
+		width:980px;
+		margin:0 auto;
+		&:before{
+			display:block;
+			content:'';
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background:url('//gscdn.hackers.co.kr/ecpa/img/common/bg_opacity.png');
+		}
+	}
+	li{
+		position:relative;
+		float:left;
+		width:33.3333%;
+		a{
+			display:table;table-layout:fixed;
+			position:relative;z-index:2;
+			width:100%;
+			height:50px;
+			box-sizing:border-box;
+			text-align:center;
+			&:hover, &.active{
+				font-weight:600;
+			}
+			span{
+				display:table-cell;
+				padding:0 10px;
+				color:#FFF;font-size:15px;
+				line-height:1.2;
+				vertical-align:middle;
+				word-break:keep-all;
+			}
+		}
+		&:before{
+			content:'';
+			position:absolute;top:14px;left:0;
+			width:1px;height:22px;
+			background:#FFF;
+		}
+		&:first-child:before{
+			display:none;
+		}
+	}
+}
+.slide-type1 li{
+	width:350px;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	img{
+		transform:scale(0.8)
+	}
+	&.on{
+		opacity:1;
+		filter: alpha(opacity=100);
+		img{
+			transform:scale(1);
+		}
+	}
+}
+

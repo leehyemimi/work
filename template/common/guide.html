@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<?php include '../common/meta.php'?>
+</head>
+<body>
+<?php include '../common/guide_nav.html'?>
+
+<div id="wrap">
+	<!--header-->
+	<?php include '../common/header.php'?>
+	<!--//header-->
+	<div id="content">
+
+		<!--작업영역-->
+		<div class="inner-box">
+			<h3 class="guide-tit">해커스경영아카데미 인강PC</h3>
+			<h4 class="guide-tit">작업모음</h4>
+			<div class="table-wrap-horizontal">
+				<table>
+					<caption class="blind">게시글</caption>
+					<colgroup>
+						<col style="width:26%;">
+						<col>
+					</colgroup>
+					<tbody>
+					<tr>
+						<th scope="row">기획</th>
+						<td>
+							<a href="http://hac.educamp.org/linker.php?menuno=1703&board_id=web_sso_prj&board_no=4620" class="btn-link point-color" target="_blank">화면설계 및 IA &gt;</a>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">디자인</th>
+						<td>
+							<a href="http://hac.educamp.org/linker.php?menuno=1261&board_id=web_publishing&board_no=53022" class="btn-link point-color" target="_blank">디자인가이드 &gt;</a>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">퍼블</th>
+						<td>
+							<a href="https://docs.google.com/spreadsheets/d/1Wwb9QlOlZaZzRHU9PBLfdySpF3SszYl_VgnDwv0hhg4/edit#gid=1518446857" class="btn-link point-color" target="_blank">퍼블리스트 &gt;</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="http://hac.educamp.org/linker.php?menuno=1703&board_id=web_sso_prj&board_no=5121" class="btn-link point-color" target="_blank">수정게시글 &gt;</a>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h4 class="guide-tit">네이밍</h4>
+			<div class="table-wrap-horizontal">
+				<table>
+					<caption class="blind">공통 가이드</caption>
+					<colgroup>
+						<col style="width:26%;">
+						<col>
+					</colgroup>
+					<tbody>
+					<tr>
+						<th scope="row">레이아웃 예약어</th>
+						<td><strong>#warp</strong><br/>
+							<strong>#header</strong><br/>
+							<strong>#content</strong> - 스타일은 주지 않는다, 구조를 잡기위한 id로 사용<br/>
+							└ .1depth 카테고리명<br/>
+							<strong>#footer</strong>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">이미지 네이밍</th>
+						<td><strong>스프라이트이미지 </strong> : sp_btn , sp_ico <br/>
+							<strong>배경이미지</strong> :  bg_com
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="3">class 네이밍</th>
+						<td>단어가 너무 길지 않으면 축약하지 않고 쓴다.<br/>
+							이름은 영문소문자, 숫자, <strong>하이픈(-)</strong>으로 작성<br/>
+							<strong>형태-의미-구조</strong>
+						</td>
+					</tr>
+					<tr>
+						<td><strong>1. type1에서 1은 제외 시킨다.</strong><br/>
+							<br/>
+							잘못된예 ) table-type1<br/>
+							잘된예 ) table-type
+						</td>
+					</tr>
+					<tr>
+						<td><strong>2. type에서 스타일이 일부변경된다면 v2,v3로 달라진부분만 변경한다.</strong><br/>
+							<br/>
+							잘못된예 ) table-type-v2<br/>
+							잘된예 ) table-type.v2
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">css</th>
+						<td>
+							<strong>common.css</strong> - reset / gnb / footer / 퀵메뉴 / 패밀리사이트 / layout<br/>
+							<strong>sub.css</strong> - 서브페이지용 (공통 + 카테고리별 css)<br/>
+							<strong>main.css</strong> - 메인페이지용<br/>
+							<strong>event.css</strong>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+			<h4 class="guide-tit">네이밍 예약어</h4>
+			<div class="table-wrap-horizontal">
+				<table>
+					<caption class="blind">네이밍 예약어</caption>
+					<colgroup>
+						<col style="width:26%;">
+						<col>
+					</colgroup>
+					<tbody>
+					<tr>
+						<th scope="row">버튼</th>
+						<td>
+							btn
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">타이틀</th>
+						<td>
+							title
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">아이콘</th>
+						<td>
+							ico
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">백그라운드</th>
+						<td>
+							bg
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">스프라이트</th>
+						<td>
+							sp
+						</td>
+					</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+			<h4 class="guide-tit">폴더구조</h4>
+			<div class="table-wrap-horizontal">
+				<table>
+					<caption class="blind">공통 가이드</caption>
+					<colgroup>
+						<col style="width:26%;">
+						<col>
+					</colgroup>
+					<tbody>
+					<tr>
+						<th scope="row">이미지 폴더구조</th>
+						<td>
+							<strong>common <br>
+							temp<br>
+							main<br>
+							event<br>
+							1depth 카테고리명</strong>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">HTML폴더구조</th>
+						<td>
+							<strong>common <br>
+								1depth 카테고리명</strong>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+		
+		<!--//작업영역-->
+
+	</div>
+	<!--footer-->
+	<?php include '../common/footer.php'?>
+	<!--//footer-->
+</div>
+</body>
+</html>

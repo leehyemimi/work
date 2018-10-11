@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<?php include '../common/meta.php'?>
+	<script src="../../highlight/highlight.pack.js"></script>
+	<link rel="stylesheet" href="../../highlight/styles/default.css">
+	<link rel="stylesheet" href="../../highlight/styles/monokai-sublime.css">
+	<script>
+		hljs.initHighlightingOnLoad();
+
+		/*$(document).ready(function() {
+			$('pre code').each(function(i, block){
+				hljs.highlightBlock(block);
+			});
+		});
+		hljs.configure({useBR: true});
+		$('div.code').each(function(i, block) {
+			hljs.highlightBlock(block);
+		});*/
+	</script>
+</head>
+
+<body>
+<?php include '../common/guide_nav.html'?>
+<div id="wrap">
+	<!--header-->
+	<?php include '../common/header.php'?>
+	<!--//header-->
+	<div id="content">
+
+		<!--작업영역-->
+		<div class="inner-box">
+			<h3 class="guide-tit">SCSS 가이드</h3>
+			<h4 class="guide-tit">기본구조</h4>
+			<pre>
+			<code class="scss">
+	/common
+		/_css
+			/_reset.scss
+			/_mixin.scss
+			/_form.scss
+			/_btn.scss
+			/_board.scss
+			/_component.scss
+			/_popUp.scss
+			/_layer.scss
+	/ecpa
+		/_css
+			/_define.scss
+			/_layout.scss
+			/_bookInfo.scss
+			/_csCenter.scss
+			/_examInfo.scss
+			/_lecture.scss
+			/_freeLecture.scss
+
+			/common.scss
+			/main.scss
+			/sub.scss
+			/teacherInfo.scss
+			</code>
+			</pre>
+
+			<h4 class="guide-tit">common.scss</h4>
+			<pre>
+				<code class="scss">
+
+	@import 'define',
+	'../../common/_css/mixin', // 공통
+	'../../common/_css/reset', // 공통
+	'layout';
+
+				</code>
+			</pre>
+
+			<h4 class="guide-tit">sub.scss</h4>
+
+			<pre>
+				<code class="scss">
+	@import 'define',
+	'../../common/_css/mixin',
+	'../../common/_css/form',
+	'../../common/_css/btn',
+	'../../common/_css/board',
+	'../../common/_css/component',
+	'../../common/_css/popUp',
+	'../../common/_css/layer', // guide
+	'lecture', 'freeLecture', 'examInfo', 'csCenter', 'bookInfo';   // page
+				</code>
+			</pre>
+
+		</div>
+		
+		<!--//작업영역-->
+
+	</div>
+	<!--footer-->
+	<?php include '../common/footer.php'?>
+	<!--//footer-->
+</div>
+</body>
+</html>

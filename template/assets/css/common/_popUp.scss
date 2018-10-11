@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+.pop-layer{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:900;
+	.bg{
+		position:absolute;
+		top:0;
+		left:0;
+		@include opacity-layer();
+		width:100%;
+		height:100%;
+	}
+	.pop-wrap{
+		position:absolute;
+		top:50%;
+		left:50%;
+		background:#FFF;
+	}
+	.pop-content{
+		padding:40px 30px;
+	}
+	.title{
+		height:48px;
+		line-height:48px;
+		text-indent:30px;
+		background:$ptc;
+		font-size:16px;
+		color:#FFF;
+	}
+	.btn-close{
+		display:inline-block;
+		position:absolute;
+		top:15px;
+		right:13px;
+		width:19px;
+		height:19px;
+		@include background('common/sp_btn.png', -127px, -92px);
+		text-indent:-99999px;
+	}
+	.br-area{
+		margin-top:30px;
+	}
+}
+#pop-window{
+	background:#FAFAFA;
+	.pop-window-wrap{
+		width:860px;
+		margin:0 auto;
+	}
+	.pop-header{
+		position:relative;
+		padding-bottom:20px;
+		border-bottom:1px solid #CCC;
+		h1{
+			font-size:25px;
+			color:#333;
+			em{
+				color:$ptc;
+			}
+		}
+		[class^='btn-']{
+			position:absolute;
+			right:0;
+			bottom:20px;
+		}
+	}
+}
+.calendar-popup{
+	height:100vh;
+	padding:5% 8%;
+	background:#FAFAFA;
+	&-header{
+		margin-bottom:26px;
+		font-size:25px;
+		text-align:center;
+		strong{
+			vertical-align:middle;
+		}
+		[class^='btn-month-']{
+			display:inline-block;
+			width:11px;height:21px;
+			margin:0 10px;
+			@include background('common/sp_btn.png', -140px, -114px);
+			font-size:0;
+			vertical-align:middle;
+		}
+		.btn-month-next{
+			background-position-x:-127px;
+		}
+	}
+	&-table{
+		table{
+			width:100%;
+		}
+		th{
+			height:62px;
+			border-top:1px solid #CCC;
+			font-size:20px;
+			font-weight:600;
+		}
+		td{
+			position:relative;
+			height:113px;
+			padding:10px;
+			border:1px solid #CCC;
+			background:#FFF;
+			font-size:15px;
+			text-align:right;
+		}
+		.day{
+			position:absolute;top:10px;right:10px;
+			color:#8E8E8E;font-weight:600;
+			font-size:14px;
+		}
+		.holiday{
+			.day{
+				color:$red-color;
+			}
+		}
+		[class^='mark-']{
+			display:block;
+			width:50px;height:50px;
+			background:#CCC;
+			border-radius:50%;
+			line-height:50px;text-align:center;
+			font-size:16px;color:#FFF;
+			@include position-abs-center(50, 50)
+		}
+		.mark-ing{
+			background:$ptc;
+		}
+	}
+
+}

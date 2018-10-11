@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<?php include '../common/meta.php'?>
+</head>
+<body>
+<?php include '../common/guide_nav.html'?>
+
+<div id="wrap">
+	<!--header-->
+	<?php include '../common/header.php'?>
+	<!--//header-->
+	<div id="content">
+
+		<!--작업영역-->
+		<div class="inner-box">
+			<br><br>
+			<h3 class="guide-tit" id="jstab">tab</h3>
+			<br>
+			<style>
+				.js_tab_type:after{content:'';display:block;clear:both}
+				.js_tab_type li{float:left;width:25%}
+				.js_tab_type li a{display:block;height:50px;border:1px solid #000;line-height:50px;text-align:center}
+				.js_tab_type li.on a{background:#000;color:#fff}
+				.js_tab_type_con{display:none}
+				.js_tab_type_con.on{display:block}
+			</style>
+			<ul class="js_tab_type">
+				<li class="on"><a href="#tab1_1">tab1_1</a></li>
+				<li><a href="#tab1_2">tab1_2</a></li>
+				<li><a href="#tab1_3">tab1_3</a></li>
+				<li><a href="#tab1_4">tab1_4</a></li>
+			</ul>
+
+			<div id="tab1_1" class="js_tab_type_con on">tab1_1</div>
+			<div id="tab1_2" class="js_tab_type_con">tab1_2</div>
+			<div id="tab1_3" class="js_tab_type_con">tab1_3</div>
+			<div id="tab1_4" class="js_tab_type_con">tab1_4</div>
+
+			<br><br>
+			<h3 class="guide-tit" id="toggle">toggle-click</h3>
+			<br>
+			<style>
+				.js_toggle_con{display:none}
+			</style>
+			<a href="#" class="js_toggle_click" data-id="toggleEvent">js_toggle_event</a>
+			<div id="toggleEvent" class="js_toggle_con">data-id == id 값 동일하면 토글이벤트 적용됨</div>
+
+			<br><br>
+			<h3 class="guide-tit">toggle-hover</h3>
+			<br>
+			<a href="#" class="js_toggle_hover" data-id="toggleEvent2">js_toggle_event</a>
+			<div id="toggleEvent2" class="js_toggle_con">data-id == id 값 동일하면 토글이벤트 적용됨</div>
+		</div>
+		<!--//작업영역-->
+
+	</div>
+	<!--footer-->
+	<?php include '../common/footer.php'?>
+	<!--//footer-->
+</div>
+</body>
+</html>

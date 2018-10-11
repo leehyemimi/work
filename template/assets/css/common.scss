@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@import 'define',
+		'common/mixin',
+		'common/reset',
+		'layout';
+
+/* color */
+.point-color{color:$ptc !important;}

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<?php include '../common/meta.php'?>
+</head>
+<body>
+<?php include '../common/guide_nav.html'?>
+
+<div id="wrap">
+	<!--header-->
+	<?php include '../common/header.php'?>
+	<!--//header-->
+	<div id="content">
+
+		<!--작업영역-->
+		<div class="inner-box">
+			<h3 class="guide-tit" id="LayerPop">Layer Pop</h3>
+			<div style="border:1px solid #000;padding:20px;">
+				<p>레이어열기 : UI.layerPopUp({selId:'레이어셀렉터'});  ex: UI.layerPopUp({selId:'#pop_sample'});</p>
+				<p>레이어닫기 : UI.layerPopUp({selId:'레이어셀렉터',st:'close'});  ex: UI.layerPopUp({selId:'#pop_sample2',st:'close'});</p>
+			</div><br>
+
+			<a href="javascript:UI.layerPopUp({selId:'#pop_sample'});">레이어샘플1열기  UI.layerPopUp({selId:'#pop_sample'});</a>
+			<div class="pop-layer" id="pop_sample">
+				<div class="bg"></div>
+				<div class="pop-wrap" style="width:500px;height:500px;">
+					<h2 class="title">해커스 경영아카데미 무료강의</h2>
+					<a href="#" class="btn-close">닫기버튼</a>
+				</div>
+			</div>
+
+			<br><br>
+
+			<a href="javascript:UI.layerPopUp({selId:'#pop_sample2'});">레이어샘플2열기</a>
+			<div class="pop-layer" id="pop_sample2">
+				<div class="bg"></div>
+				<div class="pop-wrap" style="width:600px;height:700px;">
+					<h2 class="title">해커스 경영아카데미 무료강의</h2>
+					레이어팝업내 버튼이 아니라 외부에서 처리후 레이어닫기
+					<a href="javascript:UI.layerPopUp({selId:'#pop_sample2',st:'close'});">javascript:UI.layerPopUp({selId:'#pop_sample2',st:'close'});</a>
+					<a href="#" class="btn-close">닫기버튼</a>
+				</div>
+			</div>
+
+		</div>
+		<!--//작업영역-->
+
+	</div>
+	<!--footer-->
+	<?php include '../common/footer.php'?>
+	<!--//footer-->
+</div>
+</body>
+</html>

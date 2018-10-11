@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+.pop-layer{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:900;
+	.bg{
+		position:absolute;
+		top:0;
+		left:0;
+		@include opacity-layer();
+		width:100%;
+		height:100%;
+	}
+	.pop-wrap{
+		position:absolute;
+		top:50%;
+		left:50%;
+		background:#fff;
+	}
+	.pop-content{
+		padding:40px 30px;
+	}
+	.title{
+		height:48px;
+		line-height:48px;
+		text-indent:30px;
+		background:$ptc;
+		font-size:16px;
+		color:#fff;
+	}
+	.btn-close{
+		display:inline-block;
+		position:absolute;
+		top:15px;
+		right:13px;
+		width:19px;
+		height:19px;
+		@include background('common/sp_btn.png', -127px, -92px);
+		text-indent:-99999px;
+	}
+}
+
+.pop-window{
+	background:#fafafa;
+	.pop-window-wrap{
+		width:860px;
+		margin:0 auto;
+	}
+	.pop-header{
+		position:relative;
+		padding-bottom:20px;
+		border-bottom:1pxp solid #ccc;
+		h1{
+			font-size:25px;
+			color:#333;
+			em{
+				color:$ptc;
+			}
+		}
+		[class^='btn-']{
+			position:absolute;
+			bottom:20px;
+		}
+	}
+}

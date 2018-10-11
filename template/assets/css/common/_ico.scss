@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/* ico */
+.ico-com{
+	display:inline-block;width:20px;height:20px;
+	@include background($img-ico);
+	&.point{
+		width:19px;height:15px;background-position-x:-25px;
+	}
+	&.point2{
+		width:17px;height:17px;background-position-x:-50px;
+	}
+	&.mobile{
+		width:11px;height:15px;background-position-x:-75px;
+	}
+	&.pc{
+		width:15px;height:12px;background-position-x:-100px;
+	}
+	&.movie{
+		width:22px;height:22px;background-position-x:-125px;
+	}
+	&.new{
+		width:16px;height:16px;background-position-x:-175px;
+	}
+	&.file{
+		width:18px;height:20px;background-position-x:-153px;
+	}
+	&.lock{
+		width:15px;height:15px;background-position-y:-24px;
+	}
+	&.lock2{
+		width:15px;height:15px;background-position:-155px -25px;
+	}
+	&.question{
+		width:25px;height:25px;background-position:-19px -24px;
+	}
+	&.answer{
+		width:25px;height:25px;background-position:-48px -24px;
+	}
+	&.file-close{
+		width:17px;height:17px;background-position:-77px -25px
+	}
+	&.calendar{
+		width:14px;height:14px;background-position:0 -53px;
+	}
+	&.calendar2{
+		width:21px;height:19px;background-position:-175px -25px;
+	}
+	&.alert-info {
+		width: 18px;height: 16px; background-position: -98px -25px;
+	}
+	&.time{
+		width:15px;height:16px;background-position:-18px -53px
+	}
+	&.people{
+		width:14px;height:14px;background-position:-37px -53px
+	}
+}
+.ico-down {
+	display:inline-block;
+	width:20px;
+	height:20px;
+	vertical-align: middle;
+	@include background($img-down);
+	&.thezone {
+		background-position-x:-25px;
+	}
+	&.mplayer {
+		background-position-x:-50px;
+	}
+	&.directx {
+		background-position-x:-75px;
+	}
+	&.dmanager {
+		background-position-x:-100px;
+	}
+	&.aplayer {
+		background-position-x:-125px;
+	}
+	&.qplayer {
+		background-position-x:-150px;
+	}
+	&.reader {
+		background-position-x:-175px;
+	}
+	&.hviewer {
+		background-position-x:-200px;
+	}
+	&.msword {
+		background-position-x:-225px;
+	}
+	&.msppt {
+		background-position-x:-250px;
+	}
+	&.iebrowser {
+		background-position-y:-25px;
+	}
+	&.fplayer {
+		background-position:-25px -25px;
+	}
+	&.ialzip {
+		background-position:-50px -25px;
+	}
+	&.v3lite {
+		background-position:-75px -25px;
+	}
+}
+
+
+/* ico 학원
+.ico-com{
+	display:inline-block;width:20px;height:20px;
+	@include background($img-ico);
+	&.point{
+		width:19px;height:15px;background-position-x:-25px;
+	}
+	&.point2{
+		width:17px;height:17px;background-position-x:-50px;
+	}
+	&.mobile{
+		width:11px;height:15px;background-position-x:-75px;
+	}
+	&.pc{
+		width:15px;height:12px;background-position-x:-100px;
+	}
+	&.movie{
+		width:22px;height:22px;background-position-x:-125px;
+	}
+	&.new{
+		width:16px;height:16px;background-position-x:-175px;
+	}
+	&.file{
+		width:18px;height:20px;background-position-x:-153px;
+	}
+	&.lock{
+		width:15px;height:15px;background-position-y:-24px;
+	}
+	&.lock2{
+		width:15px;height:15px;background-position:-155px -25px;
+	}
+	&.question{
+		width:25px;height:25px;background-position:-19px -24px;
+	}
+	&.answer{
+		width:25px;height:25px;background-position:-48px -24px;
+	}
+	&.file-close{
+		width:17px;height:17px;background-position:-77px -25px
+	}
+	&.calendar{
+		width:14px;height:14px;background-position:0 -53px;
+	}
+	&.calendar2{
+		width:21px;height:19px;background-position:-175px -25px;
+	}
+	&.time{
+		width:15px;height:16px;background-position:-18px -53px
+	}
+	&.people{
+		width:14px;height:14px;background-position:-37px -53px
+	}
+	&.q-arrow {
+		width: 6px;height: 7px;vertical-align: middle;background-position: -99px -25px;
+	}
+	&.q-top {
+		background-position: -110px -25px;width:7px;height:4px;vertical-align: middle;
+	}
+	&.q-btm {
+		background-position: -110px -31px;width:7px;height:4px;vertical-align: middle;
+	}
+	&.q-unlock {
+		background-position: -137px -25px;width:13px;height:14px;vertical-align: middle;
+	}
+	&.q-lock {
+		background-position: -122px -25px;width:11px;height:14px;vertical-align: middle;
+	}
+}
+.ico-down {
+	display:inline-block;
+	width:20px;
+	height:20px;
+	vertical-align: middle;
+	@include background($img-down);
+	&.thezone {
+		background-position-x:-25px;
+	}
+	&.mplayer {
+		background-position-x:-50px;
+	}
+	&.directx {
+		background-position-x:-75px;
+	}
+	&.dmanager {
+		background-position-x:-100px;
+	}
+	&.aplayer {
+		background-position-x:-125px;
+	}
+	&.qplayer {
+		background-position-x:-150px;
+	}
+	&.reader {
+		background-position-x:-175px;
+	}
+	&.hviewer {
+		background-position-x:-200px;
+	}
+	&.msword {
+		background-position-x:-225px;
+	}
+	&.msppt {
+		background-position-x:-250px;
+	}
+	&.iebrowser {
+		background-position-y:-25px;
+	}
+	&.fplayer {
+		background-position:-25px -25px;
+	}
+	&.ialzip {
+		background-position:-50px -25px;
+	}
+	&.v3lite {
+		background-position:-75px -25px;
+	}
+}
+*/
