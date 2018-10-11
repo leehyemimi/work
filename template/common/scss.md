@@ -28,10 +28,10 @@
 ```css
 @charset "UTF-8";
 @import 'variables',
-		'common/mixin',
-		'common/webfont',
-		'common/reset',
-		'layout';
+    'common/mixin',
+    'common/webfont',
+    'common/reset',
+    'layout';
 
 /* color */
 .point-color{color:$ptc !important;}
