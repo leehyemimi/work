@@ -14,7 +14,8 @@
     /_board.scss
     /_component.scss
     /_popUp.scss
-    /_layer.scss	
+    /_layer.scss
+    /_webfont.scss	
 
 ------------------------------------
 각 사이트마다 변경예상되는 파일
