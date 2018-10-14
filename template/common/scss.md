@@ -14,7 +14,6 @@
     /_board.scss
     /_component.scss
     /_popUp.scss
-    /_layer.scss
     /_webfont.scss	
 
 ------------------------------------
