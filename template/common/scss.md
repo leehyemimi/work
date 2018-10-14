@@ -2,7 +2,7 @@
 
 ### [기본파일구조](https://github.com/leehyemimi/work/tree/master/template/assets/css)
 
-```css
+```scss
 ------------------------------------
 공통파일
 ------------------------------------
