@@ -20,11 +20,11 @@
 ------------------------------------
 각 사이트마다 변경예상되는 파일
 ------------------------------------
-/_variables.scss
-/_layout.scss
-/_lecture.scss
-/common.scss
-/main.scss
+/_variables.scss //변수 
+/_layout.scss //레이아웃
+/_lecture.scss //서브페이지중 하나
+/common.scss //공통.scss 
+/main.scss 
 /sub.scss
 ```
 
