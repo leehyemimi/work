@@ -10,32 +10,7 @@ $(function(){
         $(".bx_img").slideToggle();
         return false;
     });
-
-    $("#join").on("click",function(){
-        goLoginLayer();
-    });
-    $("#login").on("click",function(){
-        goLoginLayer();
-    });
-    $("#sms_chk_4").on("click",function(){
-        var sms_chk_4 = $(this.checked).length;
-        if(sms_chk_4==0) {
-            $("input[id='s_agree']").prop('checked', false);
-        }else{
-            //$("input[id='s_agree']").prop('checked', true);
-        }
-    });
-
-    $('#sms_chk_1, #sms_chk_2').click(function(){
-        if($(this).is(':checked') == false) {
-            $('#s_agree').removeProp('checked');
-        }
-        if($('#sms_chk_1').is(':checked') && $('#sms_chk_2').is(':checked')){
-            $('#s_agree').prop('checked', 'checked');
-        }
-    });
 });
-
 
 
 var contMax = $('.scroll_cont').length;
