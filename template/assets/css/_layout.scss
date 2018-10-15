@@ -177,8 +177,8 @@
 				}
 			}
 			&.on a{
-				border-color:$ptc;
-				background:$ptc;
+				border-color:$point-color;
+				background:$point-color;
 				color:#fff;
 				&:after{
 					background-position-x:-65px;
@@ -227,7 +227,7 @@
 			background-position:-890px 0;
 		}
 		&.on > a, &:hover > a{
-			color:$ptc;
+			color:$point-color;
 			width:150px;border-left:1px solid #D7D7D7;border-right:1px solid #D7D7D7;background-color:#FFF;background-position-y:-48px;
 		}
 	}
@@ -246,7 +246,7 @@
 			font-size:13px;
 			word-wrap:break-word;
 			&:hover{
-				color:$ptc;
+				color:$point-color;
 			}
 		}
 	}

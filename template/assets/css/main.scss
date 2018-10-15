@@ -192,13 +192,13 @@ $bg:#EDEDED;
 		font-size:18px;
 		color:#363636;
 		strong{
-			color:$ptc;
+			color:$point-color;
 			&:after{
 				content:'';
 				display:inline-block;
 				width:2px;height:15px;
 				margin:0 10px 0 4px;
-				background:$ptc;
+				background:$point-color;
 				vertical-align:-1px;
 			}
 		}
@@ -321,7 +321,7 @@ $bg:#EDEDED;
 		}
 		strong{
 			font-size:24px;
-			color:$ptc;
+			color:$point-color;
 		}
 		span{
 			margin-left:4px;

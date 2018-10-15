@@ -29,7 +29,7 @@
 		height:48px;
 		line-height:48px;
 		text-indent:30px;
-		background:$ptc;
+		background:$point-color;
 		font-size:16px;
 		color:#FFF;
 	}
@@ -61,7 +61,7 @@
 			font-size:25px;
 			color:#333;
 			em{
-				color:$ptc;
+				color:$point-color;
 			}
 		}
 		[class^='btn-']{
@@ -133,7 +133,7 @@
 			@include position-abs-center(50, 50)
 		}
 		.mark-ing{
-			background:$ptc;
+			background:$point-color;
 		}
 	}
 

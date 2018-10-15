@@ -30,7 +30,7 @@
 	}
 }
 .title-type3{
-	font-size:18px;color:$ptc;letter-spacing:-1px;margin-bottom:15px;
+	font-size:18px;color:$point-color;letter-spacing:-1px;margin-bottom:15px;
 }
 [class^='title-wrap']{
 	position:relative;
@@ -180,7 +180,7 @@
 				margin-top:0;
 			}
 			&.on a{
-				color:$ptc;
+				color:$point-color;
 				text-decoration:underline;
 			}
 		}
@@ -188,7 +188,7 @@
 }
 .tab-type{
 	overflow:hidden;
-	border-bottom:2px solid $ptc;
+	border-bottom:2px solid $point-color;
 	margin-bottom:30px;
 	li{
 		float:left;
@@ -208,9 +208,9 @@
 			color:#979797;
 		}
 		&.on{
-			border-color:$ptc;
+			border-color:$point-color;
 			a{
-				background:$ptc;
+				background:$point-color;
 				color:#FFF;
 			}
 		}
@@ -236,12 +236,12 @@
 		&.on{
 			a{
 				position:relative;
-				color:$ptc;
+				color:$point-color;
 				font-weight:600;
 				&:before{
 					content:'';
 					position:absolute;top:-1px;right:-1px;left:-1px;bottom:-1px;
-					border:1px solid $ptc;
+					border:1px solid $point-color;
 				}
 			}
 		}
@@ -363,7 +363,7 @@ p.list-txt-type2{
 			right:0;
 		}
 		&.on a{
-			color:$ptc;
+			color:$point-color;
 		}
 	}
 	:after{
@@ -392,7 +392,7 @@ p.list-txt-type2{
 	color:#8E8E8E;
 	letter-spacing:-1px;
 	em{
-		color:$ptc;
+		color:$point-color;
 	}
 }
 .info-box{
@@ -417,7 +417,7 @@ p.list-txt-type2{
 		padding:0 25px;
 	}
 	em{
-		color:$ptc;
+		color:$point-color;
 	}
 }
 .list-number-type{

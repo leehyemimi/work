@@ -5,7 +5,7 @@
 .btn-small,
 .btn-medium,
 .btn-large{
-	display:inline-block;border-radius: 3px;text-align:center;background:$ptc;border:1px solid $ptc;color:#fff;letter-spacing:-1px;
+	display:inline-block;border-radius: 3px;text-align:center;background:$point-color;border:1px solid $point-color;color:#fff;letter-spacing:-1px;
 }
 .btn-xsmall{
 	border-radius: 2px;padding:0 9px;height:28px;line-height:28px;background:#fff;font-size:13px;border:1px solid #737373;color:#222;
@@ -21,7 +21,7 @@
 }
 [class^='btn-']{
 	&.v2{
-		border-color:$ptc;color:$ptc;background:#fff
+		border-color:$point-color;color:$point-color;background:#fff
 	}
 	&.v3{
 		border-color:#000;background-color:#000;color:#fff;
@@ -148,7 +148,7 @@
 			width:20px;height:20px;
 		}
 		em{
-			display:inline-block;width:20px;height:20px;background:$ptc;color:#fff;vertical-align:middle;font-size:14px;
+			display:inline-block;width:20px;height:20px;background:$point-color;color:#fff;vertical-align:middle;font-size:14px;
 		}
 	}
 	.btn-xsmall{

@@ -50,7 +50,7 @@
 	> dt{
 		overflow:hidden;
 		padding:20px 25px;
-		background:$ptc;
+		background:$point-color;
 		color:#FFF;
 		font-size:16px;
 		span{
@@ -181,7 +181,7 @@
 		color:#8E8E8E;
 		font-weight:400;
 		em{
-			color:$ptc;
+			color:$point-color;
 		}
 	}
 	.list-comment{
@@ -351,7 +351,7 @@
 				margin-right:8px;
 			}
 			.file-add{
-				color:$ptc;
+				color:$point-color;
 			}
 			.file-close{
 				margin:0 0 0 3px;
