@@ -1,0 +1,179 @@
+/* 이벤트 CSS */
+.evt_wrap{background:#090d33;padding-top:70px}
+.evt_wrap .top_menu{position:fixed;top:0;left:0;z-index:10;width:100%;background:#8feafb}
+.evt_wrap .main_visual{position:relative;background:url(//gscdn.hackers.co.kr/champ/img/event/2018/06/0800/bg_visual_v0627.jpg) no-repeat 100% 0;background-size:2500px 100%;animation:animatedbgleft 20s linear;}
+.evt_wrap .apply_form{position:absolute;top:93px;right:-208px;z-index:1;}
+.evt_wrap .apply_form ul{position:absolute;top:69px;left:0;width:100%;text-align:center;}
+.evt_wrap .apply_form ul li{margin-bottom:17px;}
+.evt_wrap .apply_form ul li input{width: 254px;padding-left: 15px;height: 31px;line-height: 39px;border: 0;font-size: 13px;}
+.evt_wrap .apply_form input[type='checkbox']{position: absolute;width: 19px;height: 19px;left: 14px;bottom: 43px;}
+.evt_wrap .apply_form input[type='radio']{position:absolute;left:209px;width:19px;height:19px;bottom:265px;}
+.evt_wrap .apply_form input[type='radio'].first{left:112px;}
+.evt_wrap .cont01{background:#fff}
+@keyframes animatedbgleft {
+	0%   {background-position:0 0;}
+	100% {background-position:100% 0 }
+}
+.main_visual .bg_line{overflow:hidden;position:absolute;bottom:150px;left:50%;margin-left:-945px;width:1858px;animation:animateline 3s linear;}
+@keyframes animateline {
+	0%   {width:0;}
+	100% {width:1858px}
+}
+.main_visual .tit_main{opacity:1;animation:animatetit 2s linear;}
+@keyframes animatetit {
+	0%   {opacity:0;filter:alpha(opacity=0)}
+	100% {opacity:1;filter:alpha(opacity=100)}
+}
+.evt_wrap .cont_02{padding:20px 0 96px;background:url(//gscdn.hackers.co.kr/champ/img/event/2018/06/0800/bg_cont_02.jpg) no-repeat 100% 100%;}
+.evt_wrap .cont_02 .mv{transition:0.5s ease;}
+.evt_wrap .cont_03{background:#0f1952;}
+.evt_wrap .cont_03_2{background:#000;}
+.evt_wrap .cont_04{background:#0d134b;}
+.evt_wrap .scroll_cont .obj{position:absolute;}
+.evt_wrap .scroll_cont .mv{opacity:0;filter:alpha(opacity=0)}
+.evt_wrap .active .mv{opacity:1;filter:alpha(opacity=100)}
+.evt_wrap .scroll_01 .phone{top:295px;left:326px;transition-delay:0.1s}
+.evt_wrap .scroll_01 .mv{transition:1s ease;transform:translate(0,100px)}
+.evt_wrap .scroll_01.active .mv{transform:translate(0,0)}
+.evt_wrap .scroll_01 .obj1{top:414px;left:195px;transition-delay:0.4s}
+.evt_wrap .scroll_01 .obj2{top:472px;left:620px;transition-delay:0.5s}
+.evt_wrap .scroll_02 .obj1, .evt_wrap .scroll_02 .obj2, .evt_wrap .scroll_02 .obj3{transition:1s ease;transform:translate(0,200px)}
+.evt_wrap .active .obj1, .evt_wrap .active .obj2, .evt_wrap .active .obj3{transform:translate(0,0)}
+.evt_wrap .scroll_02 .obj1{top:282px;left:190px;transition-delay:0.1s}
+.evt_wrap .scroll_02 .obj2{top:282px;left:392px;transition-delay:0.2s}
+.evt_wrap .scroll_02 .obj3{top:282px;left:595px;transition-delay:0.3s}
+.evt_wrap .scroll_02 .obj4{bottom:20px;left:272px;transition-delay:0.7s;transform:translate(0,100px);transition:all 1s cubic-bezier(.165,.84,.44,1);}
+.evt_wrap .active .obj4{transform:translate(0,0)}
+
+.system_lst .scroll_03{height:545px;}
+.system_lst .scroll_04{height:523px;}
+.system_lst .scroll_05{height:610px;}
+.system_lst .left{left:100px}
+.system_lst .left.txt{left:112px}
+.system_lst .right.txt{left:561px;}
+.system_lst .right.phone{right:0;}
+.system_lst .scroll_05 .left{left:0}
+.system_lst .phone{top:0;}
+.system_lst .txt{top:82px;}
+.system_lst .phone1{position:relative;}
+.system_lst .phone2{position:absolute;left:165px;top:70px;}
+.system_lst .mv{transition:0.5s ease}
+.system_lst .scroll_05 .phone2{left:56px;top:63px;}
+.system_lst .scroll_05 .phone3{position:absolute;left:70px;top:39px;}
+.system_lst .obj1{transition-delay:0.1s;}
+.system_lst .obj2{transition-delay:0.2s;}
+.system_lst .obj3{transition-delay:0.3s;}
+.system_lst .obj4{transition-delay:0.4s;}
+.system_lst .mv.txt{transition-delay:0.5s;}
+.system_lst .txt{transform:translate(0,-50px)}
+.system_lst .mv.phone, .system_lst .phone .phone1{transform:translate(0,-50px)}
+.system_lst .scroll_cont.active .mv{transform:translate(0,0)}
+.system_lst .scroll_04 .phone2{transform-delay:0.3s;transform:translate(-100px,0)}
+.system_lst .scroll_05 .phone2{transform:translate(-50px,-50px)}
+.system_lst .scroll_05 .phone3{transform:translate(-50px,-50px)}
+.evt_wrap .cont_05{height:625px;background:#fff;}
+.evt_wrap .cont_05 .mv{transition:0.5s ease;}
+.evt_wrap .cont_06{padding-bottom:70px;background:#fff url(//gscdn.hackers.co.kr/champ/img/event/2018/06/0800/bg_cont_07.jpg) repeat-x 0 100%;}
+.evt_wrap .cont_06 .cont_list li{position:relative;width:1000px;margin:0 auto;height:418px;}
+.evt_wrap .cont_06 .cont_list li:after{display:block;content:'';position:absolute;top:0;left:0;width:1px;height:100%;background:#d6d6dd;}
+.evt_wrap .cont_06 .cont_list li .mv{transition:0.5s ease;transform:translate(0,-200px)}
+.evt_wrap .cont_06 .cont_list.active .mv{transform:translate(0,0)}
+.evt_wrap .cont_06 .cont_list li .obj{top:0;}
+.evt_wrap .cont_06 .cont_list li .txt{left:0;}
+.evt_wrap .cont_06 .cont_list li .img{right:0;transition-delay:0.1s}
+.evt_wrap .cont_07{padding-bottom:100px;background:url(//gscdn.hackers.co.kr/champ/img/event/2018/06/0800/bg_cont_08_v0627.jpg) no-repeat 50% 100%}
+.evt_wrap .cont_08{padding-bottom:100px;background:#0d134b;}
+.evt_wrap .cont_09{padding-bottom:100px;background:#ced2fd;}
+.evt_wrap .cont_09 input{position:absolute;top:569px;right:36px;width:363px;padding-left:19px;height:60px;line-height:60px;background:#ececec;font-size:14px;}
+
+/* v0626 */
+.tb {display: table; width: 100%; height: 100%}
+.tbc {display: table-cell; vertical-align: middle;}
+.evt_wrap.v0626 .top_menu{background:#afffc0}
+.evt_wrap.v0626 .cont_02{padding: 114px 0 75px;background: url(//gscdn.hackers.co.kr/champ/img/event/2018/06/0800/bg_cont_02_v0627.jpg) no-repeat 100% 100%;}
+.evt_wrap.v0626 .cont_02 .obj1 {margin-top: 30px}
+.evt_wrap.v0626 .cont_02 .obj1 {transition-delay: 0.5s}
+.evt_wrap.v0626 .cont_03_2 {background:#000 url(//gscdn.hackers.co.kr/champ/img/event/2018/06/0800/img_cont_03_2.jpg) no-repeat center center; height: 1094px}
+.evt_wrap.v0626 .cont_03_2 .shadow_list_area {top: 320px; left: 67px; right: 0; height: 190px; font-size: 14px; line-height: 20px;  display: flex; width: 1000px; margin: 0 auto; text-align: center; position: relative}
+.evt_wrap.v0626 .cont_03_2 .shadow_list_area > li {position: absolute; width: 203px; height: 100%; }
+.evt_wrap.v0626 .cont_03_2 .shadow_list_area > li:first-child {width: 258px}
+.evt_wrap.v0626 .cont_03_2 .shadow_list_area > li:nth-child(2) {left: 317px}
+.evt_wrap.v0626 .cont_03_2 .shadow_list_area > li:nth-child(3) {left: 520px}
+.evt_wrap.v0626 .cont_03_2 .shadow_list_area > li:last-child {left: 723px}
+.evt_wrap.v0626 .cont_03_2 .shadow_list_area .shadow_box {background: rgba(0, 0, 0, .85); color: #fff; border: 1px solid #306875; transition:all 0.3s ease; overflow: hidden ; height: 100%; transform: translateY(100px); opacity: 0; filter:alpha(opacity=0); display: flex; align-items: center; justify-content: center}
+.evt_wrap.v0626 .cont_03_2 .shadow_list_area .shadow_box::before {content: ''; position: absolute; top: 30px; left: 50%; margin-left: -15px; background: #fff; width: 30px; height: 2px; transform: rotate(-30deg)}
+.evt_wrap.v0626 .cont_03_2 .shadow_list_area .shadow_box.active {opacity: 1; filter:alpha(opacity=1); transform: translateY(0)}
+.cnt_close, .js-faq-tit.on .cnt_open {display: none}
+.js-faq-tit.on .cnt_close {display: inline-block}
+
+	/* -------------------------------▼ 필요없을시 제거--------------------------------- */
+
+/* 소문내기 */
+.evt_share_wrap{text-align:left;margin-top:0;}
+.evt_share_wrap .btn_img{width:200px;height:64px;}
+.evt_share_wrap .btn_img strong{background-image:url(//gscdn.hackers.co.kr/champ/img/event/2017/11/2000/btn_down.jpg);}
+.evt_share_wrap input[type="text"]{margin:0 0 0 4px;width:467px;padding-left:10px;height:62px;}
+.evt_share_wrap .btn_url{display:block;width:685px;height:64px;margin-top:9px;}
+.evt_share_wrap .btn_url strong{background-image:url(//gscdn.hackers.co.kr/champ/img/event/2017/11/2000/btn_url.jpg);}
+.rumor_info{margin-top:20px;}
+.rumor_info a{display:block;width:100%;padding:15px 0;border:1px solid #0d134b;}
+.rumor_info_list{background:#0d134b;color:#fff;font-size:14px;line-height:28px;padding:20px;text-align:left;}
+
+/* 토글탭 */
+.slide_tab{}
+.slide_tab .btn_silde img{display:none}
+.slide_tab .btn_silde img.on{display:block}
+
+/* recommend_pop */
+.pop_inner{width:578px;margin:0 auto;padding-bottom:20px;background:#fff;text-align:center}
+.pop_inner .pop_inp{width:100%;margin-bottom:0;text-align:center}
+.pop_inner .pop_inp .inp_area{margin:25px 0;}
+.pop_inner .pop_inp .inp_area input{width:70%;height:42px;line-height:42px;padding-left:3%;border:1px solid #e4e4e4;margin-right:5px;padding:0;background:#fff;font-size:14px;text-align:left;color:#929292}
+.pop_inner .btn_find{display:inline-block;width:28%;padding:0;height:40px;line-height:40px;font-weight:600;font-size:15px;}
+.pop_inner .btn_find.v2{width:99%;margin-top:10px;padding:0;}
+.pop_inner .step_list{overflow:hidden;width:100%;margin-bottom:25px;}
+.pop_inner .step_list dt,.pop_inner .step_list dd{padding-bottom:
+5px;}
+.pop_inner .step_list dt{float:left;color:#109aa4;font-size:14px;width:13%;text-align:left;font-weight:600;}
+.pop_inner .step_list dd{float:left;width:87%;text-align:left;color:#6c6c6c;}
+.pop_inner .step_list dd > strong{color:#000;font-size:14px;}
+.pop_inner .pop_note{border-top:1px solid #e9e9e9;padding-top:30px;background:none;text-align:left}
+.pop_inner .pop_note strong{font-size:14px;color:#109aa4}
+.pop_inner .pop_note ul{margin-top:10px;margin-left:17px;*margin-left:25px}
+.pop_inner .pop_note ul li{color:#6c6c6c;list-style-type:decimal;line-height:20px;letter-spacing:-1px}
+
+#phone_pop{width:500px;height:320px;}
+#phone_pop .cont, #phone_pop1 .cont{position:relative; height: auto; overflow: hidden}
+#phone_pop .cont .input_list, #phone_pop1 .cont .input_list{position: absolute;left: 0;top: 0; margin-top: 50%; z-index: 100;overflow: hidden;width: 100%;}
+#phone_pop .cont .input_list li, #phone_pop1 .cont .input_list li{float: left;text-align: center;width: 30%;}
+#phone_pop .cont .input_list li:first-child, #phone_pop1 .cont .input_list li:first-child {width: 43%; margin-left: 11%}
+#phone_pop .cont .input_list li input, #phone_pop1 .cont .input_list li input{width:19px;height:19px;}
+#phone_pop .cont .t_c a, #phone_pop1 .cont .t_c a {width: 48%; color: #fff}
+#phone_pop .cont .t_c a:nth-of-type(2), #phone_pop1 .cont .t_c a:nth-of-type(2){margin-left: 2%; color: #109aa3;}
+#phone_pop img {width: 100%}
+
+/* type2 */
+.evt_wrap.type2 {padding-top: 0; background: #fff}
+.evt_wrap.type2 .inner{width:1050px}
+.evt_wrap.type2 .top_menu{background: #261974}
+.evt_wrap.type2 .main_1{background: #fff}
+.evt_wrap.type2 .area_box,
+.evt_wrap.type2 .area_box2 {width: 1150px; margin: 0 auto; text-align: center}
+.evt_wrap.type2 .area_box2 {width: 1190px}
+.evt_wrap.type2 .apply_form {border: 1px solid #000; top: 293px;right: -77px;}
+.evt_wrap.type2 .apply_form ul {position: absolute;top: 62px;left: 0;width: 100%;text-align: center;}
+.evt_wrap.type2 .apply_form ul li {margin-bottom: 14px}
+.evt_wrap.type2 .apply_form ul li input {width: 224px; background: #f3f4f5; height: 29px}
+.evt_wrap.type2 .apply_form input[type='radio'] {bottom: 236px; left: 186px}
+.evt_wrap.type2 .apply_form input[type='radio'].first {left: 100px}
+.evt_wrap.type2 .apply_form input[type='checkbox'] {left: 10px;bottom: 38px;}
+.main_1 {background: #e8eaec; }
+.main_2 {background: #383838; }
+.main_3 {background: url(//gscdn.hackers.co.kr/champ/img/event/2018/06/0800/type2/main_4_bg.jpg) repeat-x 50% 0;}
+.main_4 {background:#261974 url(//gscdn.hackers.co.kr/champ/img/event/2018/06/0800/type2/main_6_bg.jpg) no-repeat 50% 0;}
+.main_5 {background: #e2e4e8; padding-bottom: 100px}
+.evt_wrap.type2 .cont_09 input{right:63px}
+
+/*type3*/
+.evt_wrap.type3 .main_1{background: #e8eaec}
+.widget_movie img{position: absolute;}
