@@ -14,8 +14,10 @@ css/
 │   ├── _popUp.scss
 │   ├── _webfont.scss
 │   └── webfont/
-│    	├── notokr-bold.ttf
-│    	└── notokr-regular.ttf
+│    	├── notokr-regular.eot
+│    	├── notokr-regular.ttf
+│    	├── notokr-regular.woff
+│    	└── notokr-regular.woff2
 ├── _variables.scss //변수 
 ├── _layout.scss //레이아웃
 ├── _lecture.scss //서브페이지중 하나
