@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+.lecture{
+	.lnb{
+		margin-bottom:0;
+	}
+	.class-list{
+		padding:0 $padding-w;
+		>ul>li{
+			margin-top:15px;
+		}
+		.teacher-area{
+			display:table;
+			table-layout:fixed;
+			width:100%;
+			.img-box{
+				display:table-cell;
+				width:59px;
+				vertical-align:bottom;
+			}
+			.teacher-title-wrap{
+				display:table-cell;
+				padding-bottom:6px;
+				vertical-align:bottom;
+				em{
+					display:block;
+					color:$point-color;
+					font-weight:600;
+				}
+				a{
+					font-size:$font-size;
+					color:#8e8e8e;
+				}
+			}
+		}
+		dl{
+			dt a{
+				display:block;
+				position:relative;
+				padding:0 2.3%;
+				height:32px;
+				background:#2d2d2d;
+				color:#fff;
+				line-height:32px;
+				[class^='btn-ico']{
+					position:absolute;
+					right:2.3%;
+					top:50%;
+					transform:translateY(-50%);
+				}
+			}
+			dd{
+				display:none;
+			}
+			&.on{
+				dt a{
+					[class^='btn-ico']{
+						transform:rotate(180deg);
+						top:40%;
+					}
+				}
+				dd{
+					display:block;
+				}
+			}
+		}
+	}
+	.filter-area{
+		display:none;
+		padding:15px $padding-w;
+		select{
+			margin-bottom:15px;
+		}
+	}
+
+	.lecture-list-title{
+		padding:12px $padding-w;
+		font-size:$font-size2;
+		font-weight:400;
+		em{
+			display:block;
+			font-weight:600;
+		}
+	}
+	.lecture-detail-info{
+		dl{
+			display:table;
+			table-layout:fixed;
+			width:100%;
+			padding:8px $padding-w;
+			border-top:1px solid #d7d7d7;
+			&first-child{
+				border-top:0;
+			}
+
+			dt{
+				display:table-cell;
+				width:30%;
+				font-weight:600;
+				vertical-align:middle;
+			}
+			dd{
+				display:table-cell;
+				vertical-align:middle;
+				del{
+					color:#707070;
+				}
+			}
+			.btn-small{
+				width:50%;
+				margin-top:12px;
+				.ico-arr-right:before{
+					width:0.8em;
+					height:0.8em;
+				}
+			}
+		}
+	}
+	.price-info{
+		dt, dd{
+			padding:7px $padding-w;
+			border-bottom:1px solid #d7d7d7;
+		}
+		dt, dd li{
+			@include table-box();
+		}
+		dd li{
+			margin-top:8px;
+			color:#707070;
+			strong{
+				color:#000;
+			}
+			&:first-child{
+				margin-top:0;
+			}
+		}
+		em{
+			display:table-cell;
+			width:50%;
+			vertical-align:top;
+			text-align:left;
+		}
+		span{
+			display:table-cell;
+			vertical-align:top;
+			text-align:right;
+			strong{
+				font-weight:600;
+			}
+		}
+		.total-price{
+			@include table-box();
+			padding:7px $padding-w;
+			font-size:$font-size3;
+			strong{
+				color:$red-color;
+			}
+		}
+	}
+	.movie-box{
+		margin-bottom:30px;
+		img{
+			width:100%;
+		}
+	}
+	.intro-box{
+		padding:12px $padding-w;
+		background:#fff;
+	}
+
+	.lecture-board{
+		li{
+			border-bottom:1px solid #d7d7d7;
+			>dl{
+				>dt{
+					@include table-box();
+					padding:8px 0;
+
+					>span{
+						display:table-cell;
+						width:$padding-w+18%;
+						vertical-align:middle;
+						text-align:center;
+					}
+				}
+				>dd{
+					display:none;
+					padding-bottom:30px;
+					.view{
+						padding-right:$padding-w;
+						padding-left:$padding-w+18%;
+					}
+				}
+				.title{
+					display:table-cell;
+					padding-right:$padding-w;
+					vertical-align:middle;
+					color:#8e8e8e;
+					strong{
+						display:block;
+						color:#000;
+					}
+					span{
+						&:last-child:before{
+							display:inline-block;
+							content:'';
+							margin:0 6px;
+							width:1px;
+							height:10px;
+							background:#8e8e8e;
+							vertical-align:middle;
+						}
+					}
+				}
+			}
+			&.on{
+				>dl>dd{
+					display:block;
+				}
+				.title strong{
+					color:$point-color;
+				}
+			}
+			.question-box{
+				position:relative;
+				@extend .view;
+			}
+			.answer-box{
+				position:relative;
+				margin-top:10px;
+				padding-top:10px;
+				@extend .view;
+				border-top:1px dashed #d7d7d7;
+				.txt-ico-answer{
+					top:10px;
+				}
+			}
+			.txt-ico-question, .txt-ico-answer{
+				position:absolute;
+				top:0;
+				left:$padding-w+8%;
+			}
+		}
+
+	}
+
+	.tab-type + .title-wrap2{
+		border-top:0;
+	}
+
+}

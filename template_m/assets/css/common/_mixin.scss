@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+//$img-url:'//gscdn.hackers.co.kr/ecpa/img/';
+
+@mixin background($url, $x:0, $y:0, $color:''){
+	background:unquote($color) url($img-url+$url) no-repeat $x $y;
+}
+@mixin opacity-layer(){
+	display:block;
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:url($img-url+ 'common/bg_opacity.png');
+}
+@mixin position-abs-center($w,$h){
+	position:absolute;
+	width:$w + px;
+	height:$h + px;
+	top:50%;
+	left:50%;
+	margin-top:-($h/2)+px;
+	margin-left:-($w/2) +px
+}
+@mixin hidden-txt(){
+	overflow:hidden;
+	text-overflow:ellipsis;
+	display:inline-block;
+	max-width:100%;
+	white-space:nowrap;
+	text-align:left;
+}
+@mixin opacity($opacity:0.5){
+	opacity:$opacity;
+	$opacityIE:$opacity*100;
+	filter:alpha(opacity=$opacityIE);
+}
+@mixin position-abs-vertical($h,$xPos:left){
+	position:absolute;
+	height:$h + px;
+	top:50%;
+	margin-top:-($h/2)+px;
+	@if $xPos == left{
+		left:0;
+	} @else if $xPos == right{
+		right:0;
+	}
+}
+
+@mixin table-box(){
+	display:table;
+	table-layout:fixed;
+	width:100%;
+}
+
+@mixin box-shadow($shadow...) {
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin rotate($degree) {
+	transform:rotate($degree);
+	-webkit-transform:rotate($degree);
+	-moz-transform:rotate($degree);
+	-o-transform:rotate($degree);
+	-ms-transform:rotate($degree);
+}

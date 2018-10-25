@@ -1,0 +1,12 @@
+﻿@charset "UTF-8";
+@import 'define',
+		'common/mixin',
+		'common/btn',
+		'common/ico',
+		'common/form',
+		'common/board',
+		'common/component',
+		'lecture', 'examInfo', 'bookInfo', 'freeLecture', 'csCenter', 'teacherInfo';
+
+#container{padding-bottom:50px;}
+

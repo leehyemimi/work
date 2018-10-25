@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.teacher-info{
+	.teacher-list-wrap{
+		ul li{
+			padding-top:15px;
+			border-bottom:1px solid #d7d7d7;
+			a{
+				display:table;
+				table-layout:fixed;
+				width:100%;
+			}
+			.img-box{
+				display:table-cell;
+				width:80px;
+				padding:0 8px;
+				text-align:center;
+				vertical-align:bottom;
+			}
+			.txt-box{
+				display:table-cell;
+				padding-bottom:8px;
+				p{
+					font-weight:600;
+				}
+				strong{
+					display:block;
+					font-size:$font-size3;
+					color:$point-color;
+				}
+				span{
+					font-size:$font-size;
+					color:#696969;
+				}
+			}
+		}
+		ul + .title-wrap2{
+			border-top:0;
+		}
+	}
+	.br-box{
+		padding:0 10px 10px;
+	}
+	.teacher-detail-wrap{
+		.br-box{
+			padding:0;
+		}
+		.img-box{
+			border-top:1px solid #d7d7d7;
+			img{
+				width:100%;
+			}
+		}
+	}
+}

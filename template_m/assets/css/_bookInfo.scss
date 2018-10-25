@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+.book-info{
+	.book-list-wrap{
+		border-top:1px solid #ccc;
+		li{
+			padding:15px $padding-w;
+			border-bottom:1px solid #ccc;
+			.book-info{
+				display:table;
+				table-layout:fixed;
+				width:100%;
+				.img-box{
+					display:table-cell;
+					width:16%;
+					vertical-align:middle;
+					img{
+						width:100%;
+					}
+				}
+				.txt-box{
+					display:table-cell;
+					width:68%;
+					padding-left:3%;
+					vertical-align:middle;
+
+					dt{
+						font-weight:600;
+					}
+					dd{
+						.info{
+							font-size:$font-size;
+							color:#8e8e8e;
+							>span{
+								&:before{
+									display:inline-block;
+									content:'';
+									width:1px;
+									height:8px;
+									margin:0 8px;
+									background:#8e8e8e;
+									vertical-align:middle;
+								}
+								&:first-child:before{
+									display:none;
+								}
+							}
+						}
+						strong{
+							display:block;
+							margin-top:8px;
+							span{
+								color:#8e8e8e;
+								font-weight:400;
+							}
+							em{
+								color:$red-color;
+							}
+						}
+					}
+				}
+			}
+			>a{
+				display:block;
+				margin-top:10px;
+				width:100%;
+				height:27px;
+				border:1px solid #000;
+				border-radius:3px;
+				text-align:center;
+				line-height:25px;
+			}
+		}
+	}
+	.form-group-search{
+		margin-bottom:14px;
+	}
+	.board-detail-wrap{
+		dt{
+			padding-top:0;
+		}
+	}
+	.lnb + .form-group-select{
+		padding-top:0;
+	}
+}

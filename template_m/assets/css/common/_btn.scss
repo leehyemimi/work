@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+.sp-btn{
+	@include background('common/sp_btn.png');
+	background-size:300px auto;
+}
+
+[class^='btn-ico']{
+	display:inline-block;
+	@extend .sp-btn;
+}
+[class^='btn-ico-arrow']{
+	margin-left:5px;
+	vertical-align:middle;
+}
+[class^='btn-play-type']{
+	display:inline-block;
+	@extend .sp-btn;
+	width:46px;
+	height:46px;
+	background-position:-176.5px 0;
+	text-indent:-999999px;
+}
+
+.btn-play-type2{
+	 width:16px;
+	 height:19px;
+	 background-position:-234px 0;
+ }
+.btn-ico-arrow{
+	width:8px;
+	height:4px;
+	background-position:0 0;
+}
+.btn-ico-arrow2{
+	width:8px;
+	height:4px;
+	background-position:-13px 0;
+}
+.btn-ico-arrow3{
+	width:13px;
+	height:6px;
+	background-position:0 -9px;
+}
+.btn-more-wrap{
+	padding:15px $padding-w;
+	background:#fff;
+	.btn-more{
+		display:block;
+		height:40px;
+		background:#f3f3f3;
+		line-height:40px;
+		text-align:center;
+		font-size:$font-size3;
+		color:#000;
+	}
+}
+
+.btn-small{
+	display:inline-block;
+	width:100%;
+	height:27px;
+	border:1px solid #000;
+	border-radius:3px;
+	line-heightf:27px;
+	text-align:center;
+	font-size:$font-size2;
+}
+.btn-type{
+	display:inline-block;
+	width:100%;
+	height:40px;
+	border:1px solid $point-color;
+	border-radius:3px;
+	color:$point-color;
+	line-height:38px;
+	text-align:center;
+	font-size:$font-size3;
+
+	&.v2{
+		background-color:$point-color;
+		color:#fff;
+	}
+}
+
+
+.btn-type2{
+	display:inline-block;
+	width:100%;
+	height:40px;
+	border:1px solid #000;
+	border-radius:3px;
+	color:#000;
+	line-height:40px;
+	text-align:center;
+	font-size:$font-size3;
+
+	&.v2{
+		background-color:#000;
+		color:#fff;
+	}
+}
+
+[class^='btn-wrap']{
+	font-size:0;
+	[class^='btn-type']{
+		width:49%;
+		margin-left:2%;
+		&:first-child{
+			margin-left:0
+		}
+	}
+}
+
+.btn-wrap-bottom{
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:10;
+	width:100%;
+	padding:7px $padding-w;
+	background:#f3f3f3;
+}
+
+.paginate-wrap{
+	margin:15px 0 20px;
+	text-align:center;
+	.btn-number-box{
+		display:inline-block;
+		margin:0 10px;
+		vertical-align:middle;
+		em, a{
+			display:inline-block;
+			width:22px;
+			height:22px;
+			border-radius:100%;
+			line-height:22px;
+			text-indent:-2px;
+		}
+		em{
+			background:$point-color;
+			color:#fff;
+			font-weight:600;
+		}
+	}
+	[class^='ico-arr']{
+		&:before, &:after{
+			border-width:0.1em;
+			border-color:#2d2d2d;
+		}
+		&:before{
+			border-right-width:0;
+			border-bottom-width:0;
+		}
+	}
+}
+
+[class^='btn-share']{
+	display:inline-block;
+	@extend .sp-btn;
+	width:27px;
+	height:27px;
+	text-indent:-99999px;
+}
+
+.btn-share-copy{
+	background-position-x:-52px;
+}
+.btn-share-facebook{
+	background-position-x:-83px;
+}
+.btn-share-twitter{
+	background-position-x:-114px;
+}
+.btn-share-kakao{
+	background-position-x:-145px;
+}
+
+.btn-ico-link{
+	display:inline-block;
+	width:23px;
+	height:18px;
+	background-position:0 -23px;
+	text-indent:-99999px;
+}
+
+.share-box{
+	[class^='btn-ico']{
+		display:inline-block;
+		@extend .sp-btn;
+		width:60px;
+		height:60px;
+		text-indent:-99999px;
+	}
+	.btn-ico-kakao{
+		background-position:0 -52px;
+	}
+	.btn-ico-kakastory{
+		background-position:-65px -52px;
+	}
+	.btn-ico-band{
+		background-position:-130px -52px;
+	}
+	.btn-ico-twitter{
+		background-position:-195px -52px;
+	}
+	.btn-ico-face{
+		background-position:0 -117px;
+	}
+	.btn-ico-line{
+		background-position:-65px -117px;
+	}
+	.btn-ico-naver{
+		background-position:-130px -117px;
+	}
+	.btn-ico-book{
+		background-position:-195px -117px;
+	}
+}

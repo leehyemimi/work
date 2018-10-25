@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.exam-info{
+	.tab-type2{
+		padding-bottom:15px;
+		background:#f3f3f3;
+	}
+	.tab-type2{
+		+ .form-group-select, + .board-detail-wrap{
+			border-top:1px solid #d7d7d7;
+		}
+	}
+	.form-group-select{
+		background:#fff;
+		+ .list-top{
+			border-top:1px solid #d7d7d7;
+		}
+	}
+	.board-detail-bottom{
+		+ .br-box{
+			margin-top:30px;
+		}
+	}
+	.br-box{
+		margin-top:16px;
+		background:#fff;
+	}
+}
+
