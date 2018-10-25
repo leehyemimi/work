@@ -1,0 +1,19 @@
+#fsvs-body{height:100%;width:100%;}
+
+#wrap {position:relative;;margin:0 auto;}
+
+/* cont */
+.slide{width:100%; height:100%;position:relative; overflow:hidden;z-index:0;text-align:center;}
+
+/* ie */
+.wrap{height:100%;min-height:900px;width:100%;position:relative;z-index:1000;}
+body.active{height:900px;width:100%;position:relative;}
+
+.business_layer{width:900px;height:900px;text-align:left;top:1800px;z-index:0;background:#fff;}
+
+/* family_site */
+.family_site_area{height:100%;z-index:99999;width:160px;position:fixed;}
+
+.philosophy_area .mCSB_scrollTools .mCSB_draggerContainer *{width:55px !important;}
+
+.ev_roll li .tit{margin-left:-350px;}

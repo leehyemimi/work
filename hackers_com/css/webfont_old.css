@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Nanum Gothic';
+   font-style: normal;
+  font-weight: 400;
+  src: url(//www.hackers.com/css/font/NanumGothic-Regular.eot);
+  src: url(//www.hackers.com/css/font/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//www.hackers.com/css/font/NanumGothic-Regular.woff) format('woff'),
+       url(//www.hackers.com/css/font/NanumGothic-Regular.ttf) format('truetype');
+}

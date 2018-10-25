@@ -1,0 +1,314 @@
+@charset "EUC-KR";
+
+/*common*/
+html,body,main{height:100%}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-family: 'Malgun Gothic','맑은고딕','맑은 고딕','dotum',돋움,sans-serif;font-size:16px}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:none}
+
+/*com*/
+.t-c{text-align:center}
+.blind{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+.f-right{float:right}
+.f-left{float:left}
+
+/*header*/
+header{position:fixed;top:0;left:0;width:96%;height:80px;padding:0 2%;background-color:rgba(0,0,0,.8);z-index:100}
+header:after{content:'';display:block;clear:both}
+header h1{position:absolute;top:16px;width:133px;height:43px;background:url("http://www.hackers.com/img/common/logo.png") no-repeat 0 -43px;text-indent:-99999px}
+nav{float:right}
+nav ul{display:table;width:100%;height:80px}
+nav li{display:table-cell;vertical-align:middle}
+nav li a{display:block;padding:15px;color:#fff}
+
+/*layout*/
+.title{opacity:0;padding:100px 0 80px}
+[class^='section-']{overflow:hidden;position:relative;min-height:100%;background-repeat:no-repeat}
+[class^='section-'].scroll .title{animation:opacity-key .5s cubic-bezier(0.645, 0.045, 0.355, 1) both}
+.scroll-ani{opacity:0}
+[class^='section-'].scroll .scroll-ani{animation:opacity-key 1s ease both}
+
+/*slide*/
+.bx-controls-direction a{display:block;position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);width:46px;height:90px;background:url('http://www.hackers.com/img/common/btn_r_new.png') no-repeat;text-indent:-999999px}
+.bx-controls-direction .bx-prev{left:5%;background-image:url('http://www.hackers.com/img/common/btn_l_new.png')}
+.bx-controls-direction .bx-next{right:5%}
+.bx-default-pager{position:absolute;bottom:0;right:0;left:0;text-align:center}
+.bx-pager-item{display:inline-block;margin:0 4px}
+.bx-pager-item a{display:block;width:10px;height:10px;background:#666;border-radius:50%;text-indent:-999999px}
+.bx-pager-item a.active{background:#000}
+
+/*section-home*/
+.section-home{overflow:hidden;min-height:auto;height:900px;padding-top:80px}
+.section-home .content{position:absolute;top:50%;left:50%;transform:translateX(-50%) translateY(-50%);width:1050px}
+
+[class^='txt-ani']{overflow:hidden}
+[class^='txt-ani'] span{display:inline-block;overflow:hidden;position:relative;margin-bottom:12px}
+[class^='txt-ani'] span:before,
+[class^='txt-ani'] span:after{content:'';display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;background:#fff}
+.bxslider-ani li.on [class^='txt-ani'] span:before{animation:slide-in-left .8s cubic-bezier(0.645, 0.045, 0.355, 1) both}
+.bxslider-ani li.on [class^='txt-ani'] span:after{background:#22bcec;animation:slide-in-left2 .8s cubic-bezier(0.645, 0.045, 0.355, 1) both}
+.bxslider-ani li.on .txt-ani2 span:before,
+.bxslider-ani li.on .txt-ani2 span:after{animation-delay:.2s}
+.bxslider-ani li.on .txt-ani3 span:before,
+.bxslider-ani li.on .txt-ani3 span:after{animation-delay:.3s}
+.txt-sub{margin-top:80px;opacity:0}
+.bxslider-ani li.on .txt-sub{animation:opacity-key 1s cubic-bezier(0.645, 0.045, 0.355, 1) both}
+
+@keyframes slide-in-left{
+	0%{transform:translateX(0)}
+	100%{transform:translateX(100%)}
+}
+@keyframes slide-in-left2{
+	0%{transform:translateX(-100%)}
+	100%{transform:translateX(100%)}
+}
+@keyframes opacity-key{
+	0%{opacity:0;transform:translateY(100%)}
+	100%{opacity:1;transform:translateY(0)}
+}
+
+.wrap-family-site{overflow:hidden;width:839px;height:395px;margin:52px auto 0;padding:20px 20px 0 14px;background-color:rgba(255,255,255,.8)}
+.wrap-family-site:after{display:block;content:'';clear:both}
+.list-family-site{float:left;width:155px;height: 274px;margin-left:6px}
+.list-family-site dt{font-size:0;height:35px;background:url("http://www.hackers.com/img/main/list-family-site01.png") no-repeat 0 0;}
+.list-family-site li a{height:47px;display:block;font-size:0;background:url("http://www.hackers.com/img/main/list-family-site01.png") no-repeat 0 -36px;}
+.list-family-site li a:hover{background-position:-155px -36px;}
+.list-family-site li a *{font-size:0;}
+.list-family-site li a span{display:none;font-size:0;}
+.list-family-site li.tab1 a{background-position:0 -36px;}
+.list-family-site li.tab1 a:hover{background-position:-155px -36px;}
+.list-family-site li.tab2 a{background-position:0 -82px;}
+.list-family-site li.tab2 a:hover{background-position:-155px -82px;}
+.list-family-site li.tab3 a{background-position:0 -129px;}
+.list-family-site li.tab3 a:hover{background-position:-155px -129px;}
+.list-family-site li.tab4 a{background-position:0 -176px;}
+.list-family-site li.tab4 a:hover{background-position:-155px -176px;}
+.list-family-site li.tab5 a{background-position:0 -223px;}
+.list-family-site li.tab5 a:hover{background-position:-155px -223px;}
+.list-site6 dt,.list-site7 dt,
+.list-site8 dt,.list-site9 dt,.list-site10 dt{background-position:0 -271px}
+.list-site6 li.tab1 a,.list-site7 li.tab1 a,
+.list-site8 li.tab1 a,.list-site9 li.tab1 a,.list-site10 li.tab1 a{background-position:0 -306px;}
+.list-site6 li.tab1 a:hover,
+.list-site7 li.tab1 a:hover,
+.list-site8 li.tab1 a:hover,
+.list-site9 li.tab1 a:hover,
+.list-site10 li.tab1 a:hover{background-position:-155px -306px;}
+.list-site1 dt,.list-site1 li a,
+.list-site6 dt,.list-site6 li a{background-image:url("http://www.hackers.com/img/main/list-family-site01.png");}
+.list-site2 dt,.list-site2 li a,
+.list-site7 dt,.list-site7 li a{background-image:url("http://www.hackers.com/img/main/list-family-site02.png");}
+.list-site3 dt,.list-site3 li a,
+.list-site8 dt,.list-site8 li a{background-image:url("http://www.hackers.com/img/main/list-family-site03.png");}
+.list-site4 dt,.list-site4 li a,
+.list-site9 dt,.list-site9 li a{background-image:url("http://www.hackers.com/img/main/list-family-site04.png");}
+.list-site5 dt,.list-site5 li a,
+.list-site10 dt,.list-site10 li a{background-image:url("http://www.hackers.com/img/main/list-family-site05.png");}
+/*//section-home*/
+
+/*section-about*/
+.section-about{background:#000 url('http://www.hackers.com/img/common/bg_slide02.jpg') no-repeat;background-size:100%}
+.section-about .content{padding:50px 0}
+.section-about .content:after{content:'';display:block;clear:both}
+
+.section-about .bx-default-pager{bottom:-80px}
+.section-about .bx-pager-item a{width:171px;height:38px;background:url('http://www.hackers.com/img/common/con02/btn.png') no-repeat;border-radius:0}
+.section-about .bx-pager-item [data-slide-index="1"]{background-position-x:-181px}
+.section-about .bx-pager-item [data-slide-index="2"]{background-position-x:-362px}
+.section-about .bx-pager-item a.active{background-position-y:-38px}
+
+.mv-wrap{width:815px;margin:0 auto}
+.mv_box{width:649px;height:362px;float:left;background:#000}
+.mv_tab{float:left}
+.mv_tab li{margin-bottom:7px}
+.mv_tab li a{font-size:0;*text-indent:-9999px;display:block;width:166px;height:85px;background:url("http://www.hackers.com/img/common/con02/mv_btn02.png") no-repeat 0 0;}
+.mv_tab li.mn02 a{background:url("http://www.hackers.com/img/common/con02/mv_btn03.png") no-repeat 0 0;}
+.mv_tab li.mn03 a{background:url("http://www.hackers.com/img/common/con02/mv_btn04.png") no-repeat 0 0;}
+.mv_tab li.mn04 a{background:url("http://www.hackers.com/img/common/con02/mv_btn01.png") no-repeat 0 0;}
+.mv_tab li a:hover,.mv_tab li.on a{background-position:-166px 0;}
+/*//section-about*/
+
+/*section-business*/
+.section-business{background:#383d55;text-align:center}
+
+.business_area{padding:0 12%}
+.business_area ul{overflow:hidden;width:2320px;}
+.business_area ul li{float:left;padding-right:30px;margin-bottom:30px;}
+.business_area ul li a{font-size:0;*text-indent:-9999px;display:block;width:220px;height:220px;background:url("http://www.hackers.com/img/common/con03/br_img01.png") no-repeat 0 0;}
+.business_area ul li.br02 a{background:url("http://www.hackers.com/img/common/con03/br_img02.png") no-repeat 0 0;}
+.business_area ul li.br03 a{background:url("http://www.hackers.com/img/common/con03/br_img03.png") no-repeat 0 0;}
+.business_area ul li.br04 a{background:url("http://www.hackers.com/img/common/con03/br_img04.png") no-repeat 0 0;}
+.business_area ul li.br05 a{background:url("http://www.hackers.com/img/common/con03/br_img05.png") no-repeat 0 0;}
+.business_area ul li.br06 a{background:url("http://www.hackers.com/img/common/con03/br_img06.png") no-repeat 0 0;}
+.business_area ul li.br07 a{background:url("http://www.hackers.com/img/common/con03/br_img07.png") no-repeat 0 0;}
+.business_area ul li.br08 a{background:url("http://www.hackers.com/img/common/con03/br_img08.png") no-repeat 0 0;}
+.business_area ul li.br09 a{background:url("http://www.hackers.com/img/common/con03/br_img09_2.png") no-repeat 0 0;}
+.business_area ul li.br10 a{background:url("http://www.hackers.com/img/common/con03/br_img10.png") no-repeat 0 0;}
+.business_area ul li.br11 a{background:url("http://www.hackers.com/img/common/con03/br_img11.png") no-repeat 0 0;}
+.business_area ul li.br12 a{background:url("http://www.hackers.com/img/common/con03/br_img12.png") no-repeat 0 0;}
+.business_area ul li.br13 a{background:url("http://www.hackers.com/img/common/con03/br_img13.png") no-repeat 0 0;}
+.business_area ul li.br14 a{background:url("http://www.hackers.com/img/common/con03/br_img14.png") no-repeat 0 0;}
+.business_area ul li.br15 a{background:url("http://www.hackers.com/img/common/con03/br_img16.png") no-repeat 0 0;}
+.business_area ul li.br16 a{background:url("http://www.hackers.com/img/common/con03/br_img15.png") no-repeat 0 0;}
+.business_area ul li.br17 a{background:url("http://www.hackers.com/img/common/con03/br_img17.png") no-repeat 0 0;}
+.business_area ul li.br18 a{background:url("http://www.hackers.com/img/common/con03/br_img18.png") no-repeat 0 0;}
+.business_area ul li a:hover,
+.business_area ul li.on a{background-position:0 -220px;}
+.business_area .mCSB_scrollTools .mCSB_draggerContainer{border:0;background:url("http://www.hackers.com/img/common/con03/sliderbar-horizontal.png") repeat-x 0 4px;}
+.business_area .mCSB_scrollTools .mCSB_draggerContainer *{border:0;background:none;}
+.business_area .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{width:51px;height:33px;background:url("http://www.hackers.com/img/common/con03/dragger.png") no-repeat center 0;}
+.business_area .mCSB_scrollTools.mCSB_scrollTools_horizontal a + .mCSB_draggerContainer{margin:0 20px 0 auto;}
+/*//section-business*/
+
+/*section-history*/
+.section-history{background:#62142e;text-align:center}
+.history_area{overflow:hidden;width:1000px;margin:0 auto}
+.history_area .content{overflow:hidden}
+.history_area li{overflow:hidden;margin-top:-10px}
+.history_area li:first-child{margin-top:0;}
+.history_area dl{width:478px;color:#9b5b70;text-align:left;}
+.history_area dl dt{font-weight:600;font-size:15px;letter-spacing:-2px;color:#fff;margin-bottom:7px;}
+.history_area dl dt img{padding-right:2px;display:inline-block;}
+.history_area dl dd{letter-spacing:-1px;position:relative;padding-left:40px;font-size:14px;line-height:1.5;}
+.history_area dl dd span{overflow:hidden;display:block;position:absolute;left:10px;top:0;width:25px;}
+.history_area dl.f-left{text-align:right;}
+.history_area dl.f-left dd{padding-left:0;padding-right:40px;}
+.history_area dl.f-left dd span{left:auto;right:10px;}
+.history_area dl em, .history_area .f_w{color:#e39fb5;}
+.history_area .mCSB_inside > .mCSB_container{margin-right:0;}
+.history_area .mCSB_scrollTools .mCSB_draggerContainer{border:0;}
+.history_area .mCSB_scrollTools .mCSB_draggerContainer *{border:0;background:none;}
+.history_area .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{width:18px;height:100%;background:url("http://www.hackers.com/img/common/con04/dragger.png") no-repeat 0 center;}
+.history_area .mCSB_scrollTools.mCSB_scrollTools_horizontal a + .mCSB_draggerContainer{margin:0 20px 0 auto;}
+.history_area .mCSB_scrollTools{width:18px;right:50%;}
+.history_area .mCSB_draggerRail{height:100%;}
+.history_area.scroll_bar{background:url("http://www.hackers.com/img/common/con04/sliderbar-horizontal.png") no-repeat 496px 10px !important;}
+.history_area .mCSB_scrollTools .mCSB_dragger{height:60px !important;}
+/*//section-history*/
+
+/*section-philosophy*/
+.section-philosophy{overflow:hidden;min-height:auto;text-align:center}
+.section-philosophy .content{margin-top:180px}
+.section-philosophy .bxslider-default li{height:900px}
+.section-philosophy .slide01{background:#fff url('http://www.hackers.com/img/common/con05/con01.jpg') 50% 0 no-repeat}
+.section-philosophy .slide02{background:#2e2d3b url('http://www.hackers.com/img/common/con05/con02.jpg') 50% 0 no-repeat}
+.section-philosophy .slide03{background:#363a46}
+.section-philosophy .slide04{background:#222}
+/*//section-philosophy*/
+
+/*section-share*/
+.section-share{padding:0 50px;background:#382c45;text-align:center}
+.section-share .bx-default-pager{bottom:-90px}
+.philosophy_area ul{margin-bottom:60px;overflow:hidden;height:395px}
+.philosophy_area ul li{float:left;margin-right:33px;}
+.philosophy_area ul li a{display:block;position:relative;width:223px;height:395px;overflow:hidden}
+.philosophy_area ul li a img{display:block;position:absolute;left:0;top:0}
+.philosophy_area ul li a:hover img,.philosophy_area ul li.on a img{left:-232px}
+/*//section-share*/
+
+/*section-scholarship*/
+.section-scholarship{padding-bottom:80px;background:url('http://www.hackers.com/img/common/bg_slide07.jpg') 50% 0;text-align:center}
+.scholarship_arae .mn_box{overflow:hidden;width:860px;margin:0 auto}
+.scholarship_arae .mn_box li{float:left;margin-left:33px;}
+.scholarship_arae .mn_box li:first-child{margin-left:0;}
+.scholarship_arae .mn_box li a{font-size:0;*text-indent:-9999px;width:190px;height:218px;line-height:218px;display:block;}
+.scholarship_arae .mn_box li.nm01 a{background:url("http://www.hackers.com/img/common/con07/bg_tab01.png") no-repeat -190px 0;}
+.scholarship_arae .mn_box li.nm02 a{background:url("http://www.hackers.com/img/common/con07/bg_tab02.png") no-repeat -190px 0;}
+.scholarship_arae .mn_box li.nm03 a{background:url("http://www.hackers.com/img/common/con07/bg_tab03.png") no-repeat -190px 0;}
+.scholarship_arae .mn_box li.nm04 a{background:url("http://www.hackers.com/img/common/con07/bg_tab04.png") no-repeat -190px 0;}
+.scholarship_arae .mn_box li a:hover,.scholarship_arae .mn_box li.on a{background-position:0 0;}
+.scholarship_arae .scholarship_con{margin:20px 15px;display:none;}
+.scholarship_arae .scholarship_con.on{display:block;}
+.scholarship_arae .scholarship_tit{margin-bottom:15px;}
+.scholarship_arae .scholarship_txt{/*height:150px;overflow-y:auto;*/color:#ff9879;font-size:15px;line-height:1.4;}
+.scholarship_arae .scholarship_txt strong{color:#fff;font-size:16px;}
+.interview_area .rolling_box{margin:40px auto 25px;width:845px;overflow:hidden;}/*margin-left:26px*/
+.interview_area .rolling_box ul{overflow:hidden;}
+.interview_area .rolling_box ul li{width:210px;float:left;text-align:center;}
+.interview_area .rolling_box ul li span{margin-top:10px;display:block;color:#ff9879;width:195px;}
+.rolling_arrow a{top:8px;position:absolute;font-size:0;*text-indent:-9999px;display:block;width:62px;height:123px;background:url("http://www.hackers.com/img/common/con07/btn.png") no-repeat 0 0;}
+.rolling_arrow .prev_btn{left:0;}
+.rolling_arrow .next_btn{right:0;background-position:-62px 0;}
+.scholarship_btn{height:71px;width:102px;background:url("http://www.hackers.com/img/common/con07/btn01.png") no-repeat 0 0;display:block;margin:0 auto 30px;font-size:0}
+.scholarship_btn.active{background:url("http://www.hackers.com/img/common/con07/btn02.png") no-repeat 0 0;}
+
+.section-scholarship .btn-type{border:1px solid #fff;color:#d00}
+.section-scholarship .btn-type:before{background:#fff}
+.section-scholarship .btn-type:hover:after,
+.section-scholarship .btn-type:hover span{color:#fff}
+/*//section-scholarship*/
+
+/*section-recruit*/
+.section-recruit{min-height:auto;height:900px;background:url('http://www.hackers.com/img/common/bg_slide08.jpg') 50% 0 no-repeat;text-align:center}
+.section-recruit .txt-sub{margin-top:15px}
+.section-recruit.scroll [class^='txt-ani'] span:before{animation:slide-in-left .8s cubic-bezier(0.645, 0.045, 0.355, 1) both}
+.section-recruit.scroll [class^='txt-ani'] span:after{background:#22bcec;animation:slide-in-left2 .8s cubic-bezier(0.645, 0.045, 0.355, 1) both}
+.section-recruit.scroll .txt-ani2 span:before,
+.section-recruit.scroll .txt-ani2 span:after{animation-delay:.2s}
+.section-recruit.scroll .txt-sub{animation:opacity-key 1s cubic-bezier(0.645, 0.045, 0.355, 1) both}
+
+.btn-type{display:inline-block;overflow:hidden;position:relative;padding:13px 30px 16px;border:2px solid #29add6;text-align:center;color:#fff;letter-spacing:-1px}
+.btn-type>span{position:relative;z-index:2;font-size:17px}
+.btn-type:before{transition: all 0.3s;content:'';display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;background:#29add6;color:#29add6}
+.btn-type:hover:before{z-index:0;transition:all 0.3s;left:-100%}
+.btn-type:after{content:'>';position:relative;z-index:2;margin-left:5px;font-family:Dotum,sans-serif;font-weight:700;vertical-align:middle}
+
+.section-recruit .btn-type{margin-top:100px}
+/*//section-recruit*/
+
+/*section-contact*/
+.section-contact{text-align:center}
+.contact_list{overflow:hidden;width:1000px;margin:0 auto}
+.contact_list:after{content:'';display:block;clear:both}
+.contact_list dl{float:left;width:320px;margin-left:11px;}
+.contact_list dl:first-child{margin-left:0;}
+.contact_list dl dt{letter-spacing:-1px;font-size:15px;background:#000;color:#c0c0c0;}
+.contact_list dl dt,.contact_list dl dd{margin-bottom:1px;height:39px;line-height:39px;}
+.contact_list dl dd a{display:block;color:#fff;font-size:14px;background:#c9c9c9;}
+.contact_list dl dd a:hover{transition: all 0.3s;background:#fff;color:#000000;}
+.contact_tip{float:left;width:1000px;margin:15px auto 0;text-align:left}
+/*//section-contact*/
+
+/*section-center*/
+.section-center{background:url('http://www.hackers.com/img/common/bg_slide10.jpg') 50% 0 repeat;text-align:center}
+.select_link{display:none;background:#fff;width:310px;position:absolute;left:50%;margin-left:-500px;margin-top:35px;z-index:100;}
+.select_link li{text-align:left;padding:10px 30px;border-bottom:1px solid #7a78a2;}
+.select_link li a:hover{color:#5e5c85;}
+.select_list_link{overflow:hidden;width:1000px;margin:0 auto 30px;}
+.select_list_link li{position:relative;float:left;overflow:hidden;width:33.3%;margin-bottom:17px;}
+.select_list_link li a{position:relative;z-index:1;background:url("http://www.hackers.com/img/common/con10/btn_bg.png") no-repeat right 13px;font-weight:bold;font-size:16px;color:#8886b1;border:1px solid #8886b1;text-align:center;height:44px;line-height:44px;width:324px;display:block;}
+.select_list_link li a:hover{color:#3a3854}
+.select_list_link li:before{transition:all 0.3s;content:'';display:inline-block;position:absolute;top:0;left:-100%;width:325px;height:100%;background:#fff}
+.select_list_link li:hover:before{z-index:0;transition:all 0.3s;left:0;color:#000}
+/*//section-center*/
+
+/*business_layer*/
+.business_layer .bg{display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:1;background:#000;opacity:.5}
+.business_layer .inner_box{position:fixed;top:0;bottom:0;right:-100%;z-index:99;width:900px;background:#fff}
+.business_layer .inner_box .con_box{padding:110px 80px 0 80px;}
+.business_layer .inner_box .con_box .s_tit{margin-bottom:15px;}
+.business_layer .inner_box .con_box dl {margin-top:20px;}
+.business_layer .inner_box .con_box dl dt{margin-bottom:40px;}
+.business_layer .inner_box .con_box dl dd{font-size:14px;color:#808080;line-height:1.5;margin-bottom:40px;}
+.business_layer .inner_box .con-box2{position:absolute;bottom:30px;left:0}
+.business_layer .inner_box .layer_img{}
+.business_layer .inner_box .link_url{margin:10px 0 0 20px;color:#a7abbc;font-size:15px}
+.business_layer_close{position:absolute;right:30px;top:110px}
+.business_layer_txt{display:none;}
+.select_tit{font-size:14px;display:block;padding:0 0 0 10px;width:160px;border:1px solid #cdcdcd;height:32px;line-height:30px;background:url("http://www.hackers.com/img/common/con03/layer/selet.png") no-repeat right center;}
+.select_list{display:none;z-index:100;position:absolute;border:1px solid #cdcdcd;border-top:0;background:#fff;color:#3f3f3f;}
+.select_list li a{padding:0 0 0 15px;width:158px;display:block;height:23px;line-height:23px;}
+.select_list li a:hover{color:#fff;background:#cdcdcd;}
+/*//business_layer*/
+
+
+@media screen and (min-width:768px) and (max-width:1024px){
+	[class^='section-']{min-height:auto;padding-bottom:20%}
+	.section-home,
+	.section-philosophy,
+	.section-recruit{padding-bottom:0}
+}
