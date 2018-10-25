@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* 변수 선언 */
+$base-color:#e21d3b;
+$point-color:#bd011e;
+
+$image-path: '//gscdn.hackers.co.kr/champ/img/contents/shadowing/';
+$image-path-active: 'NewTEPSBasicListening';
+
+$base-img-ico:url('#{$image-path}/#{$image-path-active}/icon.png');
+$base-img-h1:url('#{$image-path}/#{$image-path-active}/tit_sub.jpg');
+$base-img-h2:url('#{$image-path}/#{$image-path-active}/tit_intro.png');
+$base-img-logo:url('#{$image-path}/#{$image-path-active}/logo.png');
+$base-img-guide:url('#{$image-path}/#{$image-path-active}/img_guide.png');
+
+.header{
+	background-color:$base-color;
+	h1{
+		background: {
+			image: $base-img-h1;
+		}
+	}
+	.header-btn{ //농도
+		background-color: $point-color;
+		a{
+			&:first-child,&.menu-btn{
+				color: $point-color;
+			}
+		}
+	}
+}
+.btn{
+	button{
+		border-color:$base-color;
+		background-color: $base-color;
+	}
+}
+.intro{
+	background:{
+		image:url('#{$image-path}/#{$image-path-active}/bg_main.jpg');
+		size:100% 100%;
+	}
+}
+.guide{
+	h1{
+		background: {
+			image: $base-img-ico;
+		}
+		color: $base-color;
+	}
+
+	ol,.guide_txt{
+		em{
+			color: $base-color;
+		}
+	}
+}
+.tabs{
+	background-color: $base-color;
+	.mtab{
+		&.active{
+			color: $base-color;
+		}
+	}
+	.ctab{
+		border-color:$base-color;
+		> li{
+			a{
+				background: {
+					image: $base-img-ico;
+				}
+			}
+		}
+	}
+}
+.audio{
+	h2{
+		background: {
+			image: $base-img-ico;
+		}
+	}
+	.btn{
+		button{
+			background: {
+				color: $base-color;
+				image: $base-img-ico;
+			}
+			&.toggle{
+				color: $base-color;
+			}
+		}
+	}
+}
+.txt-area{
+	p{
+		em{
+			color: $base-color;
+		}
+	}
+	em{
+		color: $base-color;
+	}
+}
+
+.result{
+	table{
+		border-color:$base-color;
+	}
+}
+.popup-layer{
+	.layer{
+		.cont{
+			.btn{
+				a{
+					border-color: $base-color;
+					background-color: $base-color;
+					&:first-child{
+						color: $base-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.pronunc-list{
+	.text,a{
+		background : {
+			color: $base-color;
+		}
+	}
+	ul{
+		border-color:$base-color;
+	}
+}

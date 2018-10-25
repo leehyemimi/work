@@ -1,0 +1,193 @@
+body {
+  width: 780px;
+  height: auto; }
+
+.guide h1 {
+  width: 200px;
+  padding: 4px 0 10px 45px;
+  font-size: 25px;
+  background-size: auto auto; }
+
+.intro {
+  overflow: hidden;
+  background-size: 100% 100% !important; }
+  .intro .section h1 {
+    padding: 11% 0 5%;
+    background-size: auto auto; }
+  .intro .section h2 {
+    min-height: 160px;
+    padding: 17% 0 25%;
+    background-size: auto auto; }
+  .intro .section .intro-btn {
+    padding: 20%;
+    margin: 0 auto 10%; }
+    .intro .section .intro-btn a {
+      border-radius: 50%; }
+      .intro .section .intro-btn a span {
+        display: table; }
+        .intro .section .intro-btn a span strong {
+          display: table-cell; }
+
+.guide ol {
+  background-size: auto auto; }
+
+.header h1 {
+  padding: 12% 0;
+  background-size: auto auto; }
+.header .header-btn {
+  font-size: 16px; }
+
+.tabs {
+  min-height: 40px;
+  padding-top: 40px; }
+  .tabs > li .mtab {
+    left: 203px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px; }
+  .tabs .ctab {
+    overflow: hidden;
+    margin: 35px 30px 60px; }
+    .tabs .ctab > li {
+      font-size: 17px; }
+      .tabs .ctab > li a {
+        padding: 15px 10% 15px 7%;
+        background-position: 96% -73px;
+        background-size: auto auto; }
+      .tabs .ctab > li .mtab {
+        left: 203px; }
+
+.ctab2 {
+  overflow: hidden;
+  margin: 35px 30px 60px; }
+  .ctab2 > li {
+    font-size: 17px; }
+    .ctab2 > li a {
+      padding: 15px 10% 15px 3%;
+      background-position: 96% -73px;
+      background-size: auto auto; }
+
+.txt-area {
+  font-size: 16px; }
+  .txt-area textarea {
+    height: 24px !important;
+    overflow: hidden; }
+  .txt-area p strong {
+    font-weight: bold; }
+
+#text-input div {
+  margin: 0;
+  line-height: 33px; }
+  #text-input div p {
+    display: inline-block;
+    vertical-align: middle; }
+    #text-input div p textarea {
+      width: 350px;
+      padding: 4px 10px 1px;
+      margin: 0; }
+  #text-input div.type2 p {
+    display: inline-block;
+    width: 95%; }
+    #text-input div.type2 p textarea {
+      width: 95%; }
+
+.test-wrap {
+  padding: 20px 30px 20px; }
+  .test-wrap .path, .test-wrap .status {
+    font-size: 17px; }
+  .test-wrap .status {
+    padding: 12px 5px 14px; }
+
+.btn > a {
+  width: 200px;
+  padding: 7px 0 10px; }
+.btn .rcd-state {
+  padding: 7px 0 10px; }
+  .btn .rcd-state.playing::before, .btn .rcd-state.standby::before, .btn .rcd-state.complete::before {
+    background-size: auto auto;
+    background-position: -58px -38px;
+    width: 16px;
+    height: 16px; }
+  .btn .rcd-state.standby::before {
+    background-position: -36px -36px;
+    width: 18px;
+    height: 20px; }
+  .btn .rcd-state.complete::before {
+    background-position: 0 -40px;
+    width: 20px;
+    height: 16px; }
+
+.audio h2 {
+  font-size: 20px;
+  padding-left: 40px;
+  background-position: 0 -160px;
+  background-size: auto; }
+.audio .btn button::after {
+  font-size: 10px; }
+.audio .btn button.toggle::after {
+  font-size: 10px; }
+
+.pronunc-list .text, .pronunc-list a {
+  font-weight: bold;
+  padding: 7px 0 8px 25px; }
+  .pronunc-list .text.active::after, .pronunc-list a.active::after {
+    font-size: 10px; }
+
+.popup-layer .layer {
+  width: 70%; }
+
+.head-info {
+  font-size: 24px; }
+
+.audio-volume {
+  padding: 20px; }
+  .audio-volume .volume_area {
+    left: 100px;
+    top: 35px;
+    right: 40px; }
+    .audio-volume .volume_area.ui-slider .ui-slider-handle {
+      width: 24px;
+      height: 24px; }
+    .audio-volume .volume_area.ui-slider-horizontal .ui-slider-handle {
+      top: -10px; }
+
+.ico-inter {
+  background-size: auto auto; }
+  .ico-inter.volume {
+    width: 36px;
+    height: 29px; }
+  .ico-inter.b-arrow {
+    background-position: -24px -39px;
+    width: 10px;
+    height: 11px; }
+  .ico-inter.error {
+    background-position: -69px -61px;
+    width: 85px;
+    height: 86px; }
+  .ico-inter.mike {
+    background-position: 0 -61px;
+    width: 58px;
+    height: 97px; }
+
+.guide-txt {
+  font-size: 23px; }
+
+.script-txt {
+  font-size: 24px; }
+
+.txt-view .head-view {
+  font-size: 38px;
+  margin: 40px 0; }
+.txt-view p {
+  font-size: 20px; }
+.txt-view a {
+  width: 200px;
+  padding: 7px 0 10px;
+  margin-top: 50px;
+  line-height: 1.5;
+  font-size: 15px; }
+.txt-view em {
+  margin-top: 20px; }
+
+/*# sourceMappingURL=pc_style.css.map */

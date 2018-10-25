@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+//reset
+html, body, h1, h2, h3, h4, h5, h6, p, div, th, td, table, pre, code, form, fieldset, legend, input, button, address, ol, ul, li, dl, dt, dd, img, textarea, blockquote {
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	height: 100%;
+}
+ol, ul{
+	list-style-type: none;
+}
+img{
+	vertical-align: middle;
+}
+textarea{
+	resize: vertical;
+}
+a{
+	text-decoration: none;
+	&:link, &:visited, &:active {
+		text-decoration: none;
+	}
+}
+em, i, address{
+	font-style: normal;
+}
+button {
+	overflow: visible;
+	background: none;
+	border: 0;
+	cursor: pointer;
+	padding: 0;
+	&:focus, &:active {
+		padding: 0;
+	}
+	&::-moz-focus-inner {
+		border-style: none;
+		padding: 0;
+	}
+}
+dl, dt, dd{
+	margin: 0;
+}
+table{
+	table-layout: fixed;
+	border-spacing: 0;
+}
+caption{
+	overflow: hidden;
+	position: absolute;
+	left: -1000%;
+	top: auto;
+	width: 1px;
+	height: 1px;
+}
+
+//base
+html, 
+button, 
+input, 
+select, 
+textarea,
+a{
+	font-family: "Malgun Gothic","맑은 고딕","dotum","돋움",sans-serif;
+	color: #6c6c6c;
+}
+hr{
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+::selection{
+	background: #b3d4fc;
+	text-shadow: none;
+}
+::-moz-selection{
+	background:#b3d4fc;
+	text-shadow:none;
+}
+
+//font size 
+@media (max-width:360px){html{font-size:10px;}}
+@media (min-width:361px) and (max-width:399px){html{font-size:11px;}}
+@media (min-width:400px) and (max-width:439px){html{font-size:12px;}}
+@media (min-width:440px) and (max-width:479px){html{font-size:13px;}}
+@media (min-width:480px){html{font-size:14px;}}
+/*
+@media (min-width:520px) and (max-width:559px){html{font-size:15px;}}
+@media (min-width:560px) and (max-width:599px){html{font-size:16px;}}
+@media (min-width:600px) and (max-width:639px){html{font-size:17px;}}
+@media (min-width:640px) and (max-width:679px){html{font-size:18px;}}
+@media (min-width:680px) and (max-width:719px){html{font-size:19px;}}
+@media (min-width:720px) and (max-width:759px){html{font-size:20px;}}
+@media (min-width:760px) and (max-width:799px){html{font-size:21px;}}
+@media (min-width:800px) and (max-width:839px){html{font-size:22px;}}
+@media (min-width:840px) and (max-width:879px){html{font-size:23px;}}
+@media (min-width:880px){html{font-size:24px;}}*/
+
+//chromeframe
+.chromeframe{
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	width: 480px;
+	margin: 0.2em 0;
+	border: 1px solid #cfcfcf;
+	padding: 0.4em;
+	background: #efefef;
+	color: #2f2f2f;
+	font-size: 0.8em;
+	line-height: 1.5;
+}
+
+//skip menu
+.skip{
+	a{
+		position:absolute;
+		display:block;
+		left:0;
+		right: 0;
+		top:-9999px;		
+		text-align:center;
+		z-index:9999;
+		&:active,
+		&:focus{
+			top: 0;
+			padding:10px 0;
+			font-weight:bold;
+			font-size:12px;
+			color:#fff;
+			background:#8f0027;
+		}
+	}
+}
+
+//helper class
+.hidden{
+	display:none;
+}
+.invisible{
+	visibility: hidden;
+}
+.cf{
+	&::before{
+		content: " ";
+		display: table;
+	}
+	&::after{
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+.clearfix{
+	*zoom: 1;
+}
+.mt10{
+	margin-top: 10px !important;
+}
+.mt20{
+	margin-top: 20px !important;
+}
+.mb10{
+	margin-bottom: 10px !important;
+}
+.mb20{
+	margin-bottom: 20px !important;
+}
+
+//mixin

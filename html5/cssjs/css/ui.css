@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* 변수 선언 */
+.header {
+  background-color: #e21d3b; }
+  .header h1 {
+    background-image: url("//gscdn.hackers.co.kr/champ/img/contents/shadowing//NewTEPSBasicListening/tit_sub.jpg"); }
+  .header .header-btn {
+    background-color: #bd011e; }
+    .header .header-btn a:first-child, .header .header-btn a.menu-btn {
+      color: #bd011e; }
+
+.btn button {
+  border-color: #e21d3b;
+  background-color: #e21d3b; }
+
+.intro {
+  background-image: url("//gscdn.hackers.co.kr/champ/img/contents/shadowing//NewTEPSBasicListening/bg_main.jpg");
+  background-size: 100% 100%; }
+
+.guide h1 {
+  background-image: url("//gscdn.hackers.co.kr/champ/img/contents/shadowing//NewTEPSBasicListening/icon.png");
+  color: #e21d3b; }
+.guide ol em, .guide .guide_txt em {
+  color: #e21d3b; }
+
+.tabs {
+  background-color: #e21d3b; }
+  .tabs .mtab.active {
+    color: #e21d3b; }
+  .tabs .ctab {
+    border-color: #e21d3b; }
+    .tabs .ctab > li a {
+      background-image: url("//gscdn.hackers.co.kr/champ/img/contents/shadowing//NewTEPSBasicListening/icon.png"); }
+
+.audio h2 {
+  background-image: url("//gscdn.hackers.co.kr/champ/img/contents/shadowing//NewTEPSBasicListening/icon.png"); }
+.audio .btn button {
+  background-color: #e21d3b;
+  background-image: url("//gscdn.hackers.co.kr/champ/img/contents/shadowing//NewTEPSBasicListening/icon.png"); }
+  .audio .btn button.toggle {
+    color: #e21d3b; }
+
+.txt-area p em {
+  color: #e21d3b; }
+.txt-area em {
+  color: #e21d3b; }
+
+.result table {
+  border-color: #e21d3b; }
+
+.popup-layer .layer .cont .btn a {
+  border-color: #e21d3b;
+  background-color: #e21d3b; }
+  .popup-layer .layer .cont .btn a:first-child {
+    color: #e21d3b; }
+
+.pronunc-list .text, .pronunc-list a {
+  background-color: #e21d3b; }
+.pronunc-list ul {
+  border-color: #e21d3b; }
+
+/*# sourceMappingURL=ui.css.map */

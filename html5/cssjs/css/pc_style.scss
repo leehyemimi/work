@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+$image-path: '//gscdn.hackers.co.kr/champ/img/contents/shadowing/';
+$image-path-active: 'common';
+
+body{
+	width: 780px;
+	height:auto;
+}
+
+
+.guide{
+	h1{
+		width:200px;
+		padding:4px 0 10px 45px;
+		font-size:25px;
+		background:{
+			size:auto auto;
+			//position:;
+		}
+	}
+}
+.intro{
+	overflow:hidden;
+	background-size:100% 100% !important;
+	.section{
+		h1{
+			padding:11% 0 5%;
+			background: {
+				size: auto auto;
+			}
+		}
+		h2{
+			min-height: 160px;
+			padding: 17% 0 25%;
+			background: {
+				size: auto auto;
+			}
+		}
+		.intro-btn{
+			padding: 20%;
+			margin: 0 auto 10%;
+			a{
+				border-radius: 50%;
+				span{
+					display: table;
+					strong{
+						display: table-cell;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+.guide{
+	ol{
+		//padding-top:60%;
+		background: {
+			size: auto auto;
+		}
+	}
+}
+
+.header{
+	//padding:0 0 3%;
+	h1{
+		padding:12% 0;
+		background: {
+			size: auto auto;
+		}
+	}
+	.header-btn{
+		font-size:16px;
+	}
+}
+
+.tabs{
+	min-height: 40px;
+	padding-top: 40px;
+	>li{
+		.mtab{
+			left:203px;
+			width:200px;
+			height:40px;
+			line-height:40px;
+			font-size:16px;
+		}
+	}
+	.ctab{
+		overflow:hidden;
+		margin:35px 30px 60px;
+		> li{
+			font-size:17px;
+			a{
+				padding:15px 10% 15px 7%;
+				background: {
+					position: 96% -73px;
+					size:auto auto;
+				}
+			}
+			.mtab{
+				left:203px;
+			}
+		}
+	}
+}
+
+.ctab2 {
+	overflow:hidden;
+	margin:35px 30px 60px;
+	> li{
+		font-size:17px;
+		a{
+			padding:15px 10% 15px 3%;
+			background: {
+				position: 96% -73px;
+				size:auto auto;
+			}
+		}
+	}
+}
+
+.txt-area{
+	font-size:16px;
+	//font-weight:bold;
+	textarea{
+		height:24px !important;
+		overflow: hidden;
+	}
+	p{
+		strong{
+			font-weight:bold;
+		}
+	}
+}
+#text-input{
+	div{
+		margin:0;
+		line-height:33px;
+		p{
+			display:inline-block;
+			vertical-align:middle;
+			textarea{
+				width:350px;
+				padding:4px 10px 1px;
+				margin:0;
+			}
+		}
+		&.type2{
+			p{
+				display:inline-block;
+				width:95%;
+				textarea{
+					width:95%;
+				}
+			}
+		}
+	}
+}
+
+.test-wrap{
+	padding: 20px 30px 20px;
+	.path,.status{
+		font-size:17px;
+	}
+	.status{
+		padding:12px 5px 14px;
+	}
+}
+
+.btn{
+	>a{
+		width: 200px;
+		padding: 7px 0 10px;
+	}
+	.rcd-state {
+		padding: 7px 0 10px;
+		&.playing, &.standby, &.complete {
+			&::before {
+				background-size: auto auto;
+				background-position: -58px -38px;
+				width: 16px;
+				height: 16px;
+			}
+		}
+		&.standby {
+			&::before {
+				background-position: -36px -36px;
+				width: 18px;
+				height: 20px;
+			}
+		}
+		&.complete {
+			&::before {
+				background-position: 0 -40px;
+				width: 20px;
+				height: 16px;
+			}
+		}
+	}
+}
+
+
+.audio{
+	h2{
+		font-size:20px;
+		padding-left:40px;
+		background:{
+			position:0 -160px;
+			size:auto;
+		}
+	}
+	.btn{
+		button{
+			&::after{
+				font-size:10px;
+			}
+			&.toggle{
+				&::after{
+					font-size:10px;
+				}
+			}
+		}
+	}
+}
+
+.pronunc-list{
+	.text,a{
+		font-weight:bold;
+		padding:7px 0 8px 25px;
+		&.active{
+			&::after{
+				font-size:10px;
+			}
+		}
+	}
+}
+.popup-layer{
+	.layer{
+		width:70%;
+	}
+}
+
+.head-info {
+	font-size: 24px;
+}
+
+.audio-volume {
+	padding: 20px;
+	.volume_area {
+		left: 100px;
+		top: 35px;
+		right: 40px;
+		&.ui-slider .ui-slider-handle {
+			width: 24px;
+			height: 24px;
+		}
+		&.ui-slider-horizontal .ui-slider-handle {
+			top: -10px;
+		}
+	}
+}
+
+.ico-inter {
+	background-size: auto auto;
+	&.volume {
+		width: 36px;
+		height: 29px;
+	}
+	&.b-arrow {
+		background-position: -24px -39px;
+		width: 10px;
+		height: 11px;
+	}
+	&.error {
+		background-position: -69px -61px;
+		width: 85px;
+		height: 86px;
+	}
+	&.mike {
+		background-position: 0 -61px;
+		width: 58px;
+		height: 97px;
+	}
+}
+
+.guide-txt {
+	font-size: 23px;
+}
+
+.script-txt {
+	font-size: 24px;
+}
+
+.txt-view {
+	.head-view {
+		font-size: 38px;
+		margin: 40px 0;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	a {
+		width: 200px;
+		padding: 7px 0 10px;
+		margin-top: 50px;
+		line-height: 1.5;
+		font-size: 15px;
+	}
+
+	em {
+		margin-top: 20px;
+	}
+}

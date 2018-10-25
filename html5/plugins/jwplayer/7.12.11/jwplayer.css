@@ -1,0 +1,6 @@
+@font-face {
+    url('/plugins/jwplayer/7.12.11/jw-icons.ttf');
+    url('/plugins/jwplayer/7.12.11/jw-icons.woff');
+}
+.jwplayer, .jwplayer * {font-family: 'jw-icons' !important;}
+.jwplayer .jw-icon-rewind {display: none !important;}

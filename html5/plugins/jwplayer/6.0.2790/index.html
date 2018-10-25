@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JW Player Skin SDK</title>
+    <script src="http://jwpsrv.com/library/4XUSqnfuEeOW7yIACmOLpg.js"></script>
+    <script type="text/javascript">
+        var primaryCookie = 'html5';
+        var skinURL = "five/five.xml";
+        
+        var cookies = document.cookie.split(";");
+        for (i=0; i < cookies.length; i++) {
+            var x = cookies[i].substr(0, cookies[i].indexOf("="));
+            var y = cookies[i].substr(cookies[i].indexOf("=") + 1);
+            x = x.replace(/^\s+|\s+$/g,"");
+            if (x == 'primaryCookie') {
+                primaryCookie = y;
+            } else if (x == 'skinURL') { 
+                skinURL = y;
+            }
+        }
+    </script>
+    <style type="text/css">
+        body { margin: 50px auto; width: 720px; font: 13px/20px Helvetica, Arial; background: #F5F5F5; }
+        a, h1, h2 { color: #128DEB; }
+        a { text-decoration: none; border-bottom: 1px dotted #128DEB; }
+        h1 { font-size: 32px; }
+        h2 { margin-top: 40px; }
+        input { width: 320px; }
+        #extensive, #minimum { box-shadow: 0 0 5px #ccc; }
+    </style>
+</head>
+<body>
+
+<h1>JW Player Skin Tests</h1>
+
+<p>Thanks for downloading the JW Player Skin SDK! This page will help you build your own skins for JW Player, as it provides 3 test setups that cover all visual configurations. This SDK contains the Five and Six skins for you to use as a starting point. Load a skin here:</p>
+
+<form onsubmit="return reload();">
+    <input type="text" value ="" id="skin" />
+    <button type="submit">submit</button
+</form>
+<script type="text/javascript">
+    document.getElementById('skin').value = skinURL;
+    function reload() {
+        skinURL = document.getElementById('skin').value;
+        document.cookie = "skinURL=" + skinURL;
+        window.location.reload();
+        return false;
+    };
+</script>
+
+<p>Note that, in order for this page to work, you have to load it from a webserver (or localhost). See the <a href="http://www.longtailvideo.com/support/jw-player/28847/building-jw-player-skins">Building JW Player Skins</a> and <a href="http://www.longtailvideo.com/support/jw-player/28849/skin-xml-reference">Skin XML Reference</a> articles on our support site for detailed information. As always, feedback is welcome and help is provided <a href="http://www.longtailvideo.com/support/forums/addons/using-and-creating-skins">on our support forum</a>.</dd>
+
+
+
+<h2>Extensive setup</h2>
+
+<p>This setup includes all player features, like tooltips, dock buttons and a playlist.</p>
+
+<div id="extensive"></div>
+
+<script type="text/javascript">
+    jwplayer("extensive").setup({
+        playlist: [{
+          sources: [{
+              file: 'http://content.jwplatform.com/videos/bkaovAYt-52qL9xLP.mp4'
+          },{
+              file: 'http://content.jwplatform.com/videos/bkaovAYt-52qL9xLP.mp4'
+          }],
+          title: "Binary HD/CC",
+          description: "This example shows a binary HD and Closed Captions Buttons.",
+          image: 'http://content.jwplatform.com/thumbs/bkaovAYt-640.jpg',
+          tracks: [{
+            file: 'http://content.jwplatform.com/captions/Y1lkLS9j.txt' 
+          }],
+        },{
+          sources: [{
+              file: 'http://content.jwplatform.com/videos/3XnJSIm4-DZ7jSYgM.mp4',
+              label: '720p',
+          },{
+              file: 'http://content.jwplatform.com/videos/3XnJSIm4-kNspJqnJ.mp4',
+              label: '360p',
+          },{
+              file: 'http://content.jwplatform.com/videos/3XnJSIm4-injeKYZS.mp4',
+              label: '180p',
+          }],
+          image: 'http://content.jwplatform.com/thumbs/3XnJSIm4-640.jpg',
+          title: "Overlay HD/CC",
+          description: "This example shows tooltip overlays for captions and quality.",
+          tracks: [{
+            label:'English',
+            file:'http://content.jwplatform.com/captions/2UEDrDhv.txt'
+          },{
+            label:'Japanese',
+            file:'http://content.jwplatform.com/captions/6aaGiPcs.txt'
+          },{
+            label:'Russian',
+            file:'http://content.jwplatform.com/captions/2nxzdRca.txt'
+          },{
+            label:'Spanish',
+            file:'http://content.jwplatform.com/captions/BMjSl0KC.txt'
+          }]
+        },{
+          file: 'http://content.jwplatform.com/videos/nhYDGoyh-kNspJqnJ.mp4',
+          image: 'http://content.jwplatform.com/thumbs/nhYDGoyh-640.jpg',
+          title: "Chapter Markers",
+          description: "This example shows chapter markers in the time slider.",
+          tracks: [{
+            file:'http://content.jwplatform.com/captions/le7PxkTf.txt',
+            kind:'chapters'
+          }],
+        },{
+          file: 'http://content.jwplatform.com/videos/i8oQD9zd-kNspJqnJ.mp4',
+          title: "Thumbnails",
+          description: "This example shows tooltip thumbnails above the time slider.",
+          image: 'http://content.jwplatform.com/thumbs/i8oQD9zd-640.jpg',
+          tracks: [{
+            file:'http://content.jwplatform.com/strips/i8oQD9zd-120.vtt',
+            kind:'thumbnails'
+          }],
+        }],
+        listbar: {
+            position: 'right',
+            size: 320
+        },
+        primary: primaryCookie,
+        skin: skinURL,
+        width: 800,
+        height: 270
+    });
+    jwplayer("extensive").onReady(function() {
+        if(jwplayer().getRenderingMode() == "flash") { 
+            this.addButton("assets/html5.png", "Switch to HTML5", switchMode, "button1");
+        } else { 
+            this.addButton("assets/flash.png", "Switch to Flash", switchMode, "button1");
+        }
+        this.addButton("assets/error.png", "Generate an Error", setError, "button2");
+        this.addButton("assets/buffer.png", "Set Infinite Buffer", setBuffer, "button3");
+    });
+    function switchMode() {
+        primaryCookie == 'html5' ? primaryCookie = 'flash': primaryCookie = 'html5';
+        document.cookie = "primaryCookie=" + primaryCookie;
+        window.location.reload();
+    };
+    function setError() {
+        jwplayer("extensive").load({file:'assets/404.mp4'}).play();
+    };
+    function setBuffer() {
+        var f = 'rtmp://fms.12E5.edgecastcdn.net/0012E5/videos/Qvxp3Jnv-68183.flv';
+        jwplayer("extensive").load({file:f}).play();
+    };
+</script>
+
+
+<h2>Minimum size</h2>
+
+<p>At this minimum size, all controls should still be visible and usable.</p>
+
+<div id="minimum"></div>
+
+<script type="text/javascript">
+    jwplayer("minimum").setup({
+        file: 'http://content.jwplatform.com/videos/kaUXWqTZ-I3ZmuSFT.m4a',
+        image: 'http://content.jwplatform.com/thumbs/kaUXWqTZ-640.jpg',
+        primary: primaryCookie,
+        skin: skinURL,
+        width: 320,
+        height: 180
+    });
+</script>
+
+
+
+<h2>Audio mode</h2>
+
+<p>In this mode, the controlbar should blend in with the page background.</p>
+
+<div id="audio"></div>
+
+<script type="text/javascript">
+    jwplayer("audio").setup({
+        playlist: [{
+          file: 'http://content.jwplatform.com/videos/bkaovAYt-I3ZmuSFT.m4a',
+        },{
+          file: 'http://content.jwplatform.com/videos/3XnJSIm4-I3ZmuSFT.m4a'
+        },{
+          file: 'http://content.jwplatform.com/videos/i8oQD9zd-I3ZmuSFT.m4a'
+        }],
+        height: 32,
+        primary: primaryCookie,
+        skin: skinURL
+    });
+</script>
+
+
+
+</body>
+</html>
