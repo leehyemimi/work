@@ -1,0 +1,151 @@
+body {
+    font-family: 'NanumSquare', sans-serif !important;
+}
+.btn-close-app {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+}
+ol, li {
+    list-style: none;
+}
+header.header .navbar {
+    display: block;
+    margin: 50px auto;
+}
+
+header.header .navbar img.logo {
+    width: 32px;
+    height: 34px;
+}
+
+header.header .navbar img.logo_text {
+    width: 44px;
+    height: 25px;
+}
+.form_login {
+    padding: 0 23px;
+}
+
+.form_login .form-group {
+    margin-bottom: 0;
+}
+.form_login .form-group input[type="text"],
+.form_login .form-group textarea
+{
+    border-top: none;
+    border-radius: 0;
+    border-right: none;
+    border-left: none;
+    padding-left: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    height: 50px;
+}
+.form_login .form-group.color_black input[type="text"]::placeholder {
+    color: #000;
+}
+.form_login .form-group textarea {
+    height: fit-content;
+    resize: none;
+}
+.form_login .form-group input:focus {
+    box-shadow: none;
+}
+.form_login .form-group input::placeholder,
+.form_login .form-group textarea::placeholder{
+    color: #b6b6b6;
+    font-size: 13px;
+}
+.form_login .form-group.checked {
+    margin-top: 20px;
+}
+.form_login .form-group.checked label {
+    font-weight: bold;
+    font-size: 14px;
+}
+.form-group button.btn-login {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #49c6a8;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 11px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.login_other {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0 13px;
+    padding-left: 0;
+    width: 67%;
+    margin: auto auto 35px;
+}
+
+.login_other li {
+    text-align: center;
+
+}
+.login_other li a img {
+    width: 45px;
+    height: 45px;
+}
+button.btn-fwd {
+    width: 100%;
+    border: solid 1px #c5c5c5;
+    height: 50px;
+    border-radius: 11px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: transparent;
+
+
+}
+.form-group input[type="checkbox"] {
+    padding: 0;
+    height: 22px;
+    width: 22px;
+    z-index: 9;
+    margin-bottom: 0;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.form-group label {
+    position: relative;
+    cursor: pointer;
+}
+
+.form-group label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid #cfcfcf;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 100%;
+}
+
+.form-group input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    width: 6px;
+    height: 12px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
